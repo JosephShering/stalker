@@ -1,0 +1,8 @@
+[gd_resource type="Action" format=3 uid="uid://dw56blnp0ipk0"]
+
+[ext_resource type="Consideration" uid="uid://drmihbposeb35" path="res://enemies/considerations/is_hungry.tres" id="1_qps7c"]
+[ext_resource type="Consideration" uid="uid://dqxcvxaixqop2" path="res://enemies/considerations/food_far_away.tres" id="2_1v2h8"]
+
+[resource]
+action_name = "move_to_food"
+considerations = Array[Consideration]([ExtResource("1_qps7c"), ExtResource("2_1v2h8")])

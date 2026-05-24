@@ -1,0 +1,1812 @@
+[gd_scene load_steps=357 format=3 uid="uid://c0wvnvod6m8db"]
+
+[ext_resource type="PackedScene" uid="uid://cdpnlepbbh5sb" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_House_01.tscn" id="1_f7kf0"]
+[ext_resource type="Environment" uid="uid://cydxk2hl6771x" path="res://Assets/PolygonBattleRoyale/Materials/WorldEnvironmentLighting.tres" id="1_inb8a"]
+[ext_resource type="PackedScene" uid="uid://dt0pbqiku0h8v" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_House_02.tscn" id="2_fs6xx"]
+[ext_resource type="PackedScene" uid="uid://b3j4vn245oufi" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_House_03.tscn" id="3_denjl"]
+[ext_resource type="PackedScene" uid="uid://moqdbt24okko" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_House_Glass_01.tscn" id="4_4oxoq"]
+[ext_resource type="PackedScene" uid="uid://bpjlynbsfjpwn" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_SmallBuilding_01.tscn" id="5_8c1sx"]
+[ext_resource type="PackedScene" uid="uid://c345ccomk8g3w" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_SmallBuilding_02.tscn" id="6_u8ajy"]
+[ext_resource type="PackedScene" uid="uid://bv42ttlu0k8mn" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_SmallBuilding_03.tscn" id="7_pmkad"]
+[ext_resource type="PackedScene" uid="uid://brv0x76o0wgn6" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_Tent_01.tscn" id="8_srbc5"]
+[ext_resource type="PackedScene" uid="uid://dffbho4okyj56" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_Tent_02.tscn" id="9_xkgcr"]
+[ext_resource type="PackedScene" uid="uid://xtgx7wfkufyx" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_Warehouse_01.tscn" id="10_awjae"]
+[ext_resource type="PackedScene" uid="uid://bcdtou1ij62op" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_Window_Bars_01.tscn" id="11_5qsoq"]
+[ext_resource type="PackedScene" uid="uid://dpjgce33s5gwq" path="res://Assets/PolygonBattleRoyale/Prefabs/Buildings/SM_Bld_WoodenShack_01.tscn" id="12_vsuae"]
+[ext_resource type="PackedScene" uid="uid://bjdu4jhe10mc0" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_70sFemale_01.tscn" id="14_fs6xx"]
+[ext_resource type="PackedScene" uid="uid://bwakrhvguufvn" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_BusinessMale_01.tscn" id="15_denjl"]
+[ext_resource type="PackedScene" uid="uid://7dfes57u6al7" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_GhillieSuit_01.tscn" id="16_4oxoq"]
+[ext_resource type="PackedScene" uid="uid://bi86nv7abdnee" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_GothFemale_01.tscn" id="17_8c1sx"]
+[ext_resource type="PackedScene" uid="uid://b5b5bl643dh28" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_MercenaryFemale_01.tscn" id="18_u8ajy"]
+[ext_resource type="PackedScene" uid="uid://cpk1m1h84srqy" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_MercenaryMale_01.tscn" id="19_pmkad"]
+[ext_resource type="PackedScene" uid="uid://byg0bwwsgat2a" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_MilitaryFemale_01.tscn" id="20_srbc5"]
+[ext_resource type="PackedScene" uid="uid://ctx5mcp7vijbs" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_MilitaryMale_01.tscn" id="21_xkgcr"]
+[ext_resource type="PackedScene" uid="uid://5uafmcd6wune" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_RedneckMale_01.tscn" id="22_awjae"]
+[ext_resource type="PackedScene" uid="uid://djh6e75b1jv0j" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_SportsBraFemale_01.tscn" id="23_5qsoq"]
+[ext_resource type="PackedScene" uid="uid://cd6w3yy4atm7e" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_SportyFemale_01.tscn" id="24_vsuae"]
+[ext_resource type="PackedScene" uid="uid://dgo6ltq2qx4au" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_SportyFemale_02.tscn" id="25_hnegn"]
+[ext_resource type="PackedScene" uid="uid://dfb5o7x5mxlwd" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_SportyMale_01.tscn" id="26_4qqcx"]
+[ext_resource type="PackedScene" uid="uid://bop7dkitf1i05" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_SportyMale_02.tscn" id="27_6105k"]
+[ext_resource type="PackedScene" uid="uid://d4a066dfd5yha" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_ToplessMale_01.tscn" id="28_ww4xw"]
+[ext_resource type="PackedScene" uid="uid://bdd0iqmg2da6m" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Ammo_01.tscn" id="28_x1y3e"]
+[ext_resource type="PackedScene" uid="uid://dpwmvbsjltly4" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Bag_Lvl1.tscn" id="29_kkjl2"]
+[ext_resource type="PackedScene" uid="uid://ctintbwwv1vd2" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Bag_Lvl2.tscn" id="30_vbad4"]
+[ext_resource type="PackedScene" uid="uid://ceauuco2nxmx3" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Bag_Lvl3.tscn" id="31_n4ir7"]
+[ext_resource type="PackedScene" uid="uid://bvhws0yl2db1t" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Beard_02.tscn" id="32_70828"]
+[ext_resource type="PackedScene" uid="uid://cdq8lkdnnpr17" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Beard_03.tscn" id="33_pr2ui"]
+[ext_resource type="PackedScene" uid="uid://b5bj4fnga52o1" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Beard_04.tscn" id="34_4hbe8"]
+[ext_resource type="PackedScene" uid="uid://cnuoam6bkoli8" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Beard_05.tscn" id="35_80me8"]
+[ext_resource type="PackedScene" uid="uid://cfo4jnq4o3ekj" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Beard_06.tscn" id="36_bw8j3"]
+[ext_resource type="PackedScene" uid="uid://c114jipo5jk00" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Beard_07.tscn" id="37_ninnt"]
+[ext_resource type="PackedScene" uid="uid://b3yfqjdcemi8c" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Bedroll_01.tscn" id="38_kpf0o"]
+[ext_resource type="PackedScene" uid="uid://dkpagyjuybwyn" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Bedroll_02.tscn" id="39_5e4ta"]
+[ext_resource type="PackedScene" uid="uid://duwl8fk0gwaqa" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Earmuffs_01.tscn" id="40_ggpwr"]
+[ext_resource type="PackedScene" uid="uid://d2412prh2tt6y" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Eyepatch_01.tscn" id="41_mx80t"]
+[ext_resource type="PackedScene" uid="uid://vxfvslue5xn5" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Facemask_01.tscn" id="42_xkjal"]
+[ext_resource type="PackedScene" uid="uid://ds7386xvh2ouw" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Facemask_02.tscn" id="43_6uwsb"]
+[ext_resource type="PackedScene" uid="uid://riiywgj0ui7" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Facemask_03.tscn" id="44_0ha6x"]
+[ext_resource type="PackedScene" uid="uid://bc48poivusvxl" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Female_01.tscn" id="45_ttryb"]
+[ext_resource type="PackedScene" uid="uid://cm7x7hn26fgxh" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Female_02.tscn" id="46_15b86"]
+[ext_resource type="PackedScene" uid="uid://csdbaiunialn0" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Female_Armor_01.tscn" id="47_8s4vs"]
+[ext_resource type="PackedScene" uid="uid://b0ulklwrxrooa" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Female_Armor_02.tscn" id="48_sbn3s"]
+[ext_resource type="PackedScene" uid="uid://bc157cgusvjqk" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Female_Armor_03.tscn" id="49_gmd0w"]
+[ext_resource type="PackedScene" uid="uid://ihq1pefdff7k" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Female_Default_Hair_01.tscn" id="50_sv3ql"]
+[ext_resource type="PackedScene" uid="uid://bf3v712ig46h5" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Female_Hair_01.tscn" id="51_o0fi3"]
+[ext_resource type="PackedScene" uid="uid://cqc3nco7v146f" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Female_Hair_Pigtails_01.tscn" id="52_dfw1t"]
+[ext_resource type="PackedScene" uid="uid://d1c4mkx1hximq" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_GasMask_01.tscn" id="53_l7ijl"]
+[ext_resource type="PackedScene" uid="uid://1n8e01dg4nvk" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Glasses_01.tscn" id="54_m1crl"]
+[ext_resource type="PackedScene" uid="uid://du0k323gg062v" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Bandana_01.tscn" id="55_t5akm"]
+[ext_resource type="PackedScene" uid="uid://byad8yetk73dh" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Beanie_01.tscn" id="56_3pi2l"]
+[ext_resource type="PackedScene" uid="uid://dh168w3kr5nu8" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Beer_01.tscn" id="57_ijaat"]
+[ext_resource type="PackedScene" uid="uid://bs103eqevsnq4" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Bunny_01.tscn" id="58_jvt8t"]
+[ext_resource type="PackedScene" uid="uid://b42n4o5q5ffat" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Cap_01.tscn" id="59_1bh6j"]
+[ext_resource type="PackedScene" uid="uid://bx3mvlrr8yi1y" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Captian_01.tscn" id="60_6ewj8"]
+[ext_resource type="PackedScene" uid="uid://cprew1ao46x5w" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Cowboy_01.tscn" id="61_xj6f1"]
+[ext_resource type="PackedScene" uid="uid://dirt87fknfrmd" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Crown_01.tscn" id="62_6hgno"]
+[ext_resource type="PackedScene" uid="uid://8dqxvcwgk4an" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Cupcake_01.tscn" id="63_c8bkg"]
+[ext_resource type="PackedScene" uid="uid://jda781dknfgk" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Elf_01.tscn" id="64_282ml"]
+[ext_resource type="PackedScene" uid="uid://oacgvlpx85ei" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Fez_01.tscn" id="65_p0bpw"]
+[ext_resource type="PackedScene" uid="uid://l271gxjsmdjm" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_FlatTop_01.tscn" id="66_k0qx4"]
+[ext_resource type="PackedScene" uid="uid://dqfgq1sekr0vi" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Football_01.tscn" id="67_apo8h"]
+[ext_resource type="PackedScene" uid="uid://cgvpgd8iq05a2" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_IceCream_01.tscn" id="68_xepp1"]
+[ext_resource type="PackedScene" uid="uid://c2or7543a4445" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Irish_01.tscn" id="69_xxvge"]
+[ext_resource type="PackedScene" uid="uid://d0m5m6ds0jlvp" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Knight_01.tscn" id="70_aqyxu"]
+[ext_resource type="PackedScene" uid="uid://cn84cjqb3e4v7" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Mexican_01.tscn" id="71_j73jw"]
+[ext_resource type="PackedScene" uid="uid://dphk4ir0bmv66" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Mil_01.tscn" id="72_rsaao"]
+[ext_resource type="PackedScene" uid="uid://cgi3kr3w24s7l" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Party_01.tscn" id="73_tx1d7"]
+[ext_resource type="PackedScene" uid="uid://bb4eyy760poa6" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Pot_01.tscn" id="74_jlma6"]
+[ext_resource type="PackedScene" uid="uid://dt1queuuyrpyt" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Racoon_01.tscn" id="75_r0yvl"]
+[ext_resource type="PackedScene" uid="uid://1duap513kxem" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Roadcone_01.tscn" id="76_eavcb"]
+[ext_resource type="PackedScene" uid="uid://wfx354p3527u" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Roman_01.tscn" id="77_d1mey"]
+[ext_resource type="PackedScene" uid="uid://cf3ubt1brhprp" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Samurai_01.tscn" id="78_bpo1v"]
+[ext_resource type="PackedScene" uid="uid://cb3cwfqrpfcwh" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Shark_01.tscn" id="79_l03wv"]
+[ext_resource type="PackedScene" uid="uid://cm8yjgmd1xlnj" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Squid_01.tscn" id="80_mcolw"]
+[ext_resource type="PackedScene" uid="uid://j1842ctf7w3h" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Tacticle_01.tscn" id="81_b0myn"]
+[ext_resource type="PackedScene" uid="uid://b2ykt47rv01sw" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Turban_01.tscn" id="82_1f50a"]
+[ext_resource type="PackedScene" uid="uid://c4x1et01y7a0y" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Hat_Unicorn_01.tscn" id="83_gjf06"]
+[ext_resource type="PackedScene" uid="uid://b8i3j8g4qg68q" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Helmet_01.tscn" id="84_67iws"]
+[ext_resource type="PackedScene" uid="uid://cli3xkeakfknk" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Helmet_02.tscn" id="85_46njc"]
+[ext_resource type="PackedScene" uid="uid://ep1n3jd0kxdg" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Helmet_03.tscn" id="86_6ulhd"]
+[ext_resource type="PackedScene" uid="uid://cr1c1t1w6ha1i" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Armor_01.tscn" id="87_1pimf"]
+[ext_resource type="PackedScene" uid="uid://ckleo057sjjao" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Armor_02.tscn" id="88_7wx7g"]
+[ext_resource type="PackedScene" uid="uid://b66vcluolcitv" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Armor_03.tscn" id="89_dtaja"]
+[ext_resource type="PackedScene" uid="uid://niggdtaucqqj" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Default_Hair_01.tscn" id="90_syot3"]
+[ext_resource type="PackedScene" uid="uid://cxkf4v7cf6m72" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Hair_01.tscn" id="91_vair0"]
+[ext_resource type="PackedScene" uid="uid://cg41uuapsdco" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Hair_02.tscn" id="92_fjbjh"]
+[ext_resource type="PackedScene" uid="uid://cnijk4hxvu1y2" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Hair_03.tscn" id="93_lj3do"]
+[ext_resource type="PackedScene" uid="uid://drqxacwdokaw6" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Hair_04.tscn" id="94_xeao3"]
+[ext_resource type="PackedScene" uid="uid://bqj5ko3b5rl6a" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Hair_05.tscn" id="95_f0dfo"]
+[ext_resource type="PackedScene" uid="uid://bt0p7mtj0bjmt" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Hair_06.tscn" id="96_p84yp"]
+[ext_resource type="PackedScene" uid="uid://oee3htsvk1lx" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Hair_07.tscn" id="97_hspbi"]
+[ext_resource type="PackedScene" uid="uid://bl88gdho8tkex" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Pouch_01.tscn" id="98_u2k17"]
+[ext_resource type="PackedScene" uid="uid://ckihwbvguhlfx" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Pouch_02.tscn" id="99_7t3mw"]
+[ext_resource type="PackedScene" uid="uid://eolk14wu5f8x" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Pouch_03.tscn" id="100_nwx38"]
+[ext_resource type="PackedScene" uid="uid://dx0mdhbynp5lt" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Pouch_04.tscn" id="101_7rg1l"]
+[ext_resource type="PackedScene" uid="uid://df1n81hii3ygl" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Pouch_05.tscn" id="102_a4p1v"]
+[ext_resource type="PackedScene" uid="uid://bf0w4gfroq1e2" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Pouch_06.tscn" id="103_3mvts"]
+[ext_resource type="PackedScene" uid="uid://bhxptjpybrbc" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Pouch_07.tscn" id="104_7unlo"]
+[ext_resource type="PackedScene" uid="uid://d3drwuaqv5l8n" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Pouch_08.tscn" id="105_m3pko"]
+[ext_resource type="PackedScene" uid="uid://c1exmly75fwa5" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Scarf_01.tscn" id="106_pw47x"]
+[ext_resource type="PackedScene" uid="uid://ykx7p4i6gnj7" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Scarf_02.tscn" id="107_l0qvb"]
+[ext_resource type="PackedScene" uid="uid://duk7cul3e7fjm" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Patch_Flag_01.tscn" id="108_qhuxe"]
+[ext_resource type="PackedScene" uid="uid://cv7vi7fg7bfon" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Patch_Leaf_01.tscn" id="109_hrwpc"]
+[ext_resource type="PackedScene" uid="uid://k5blxvts4d41" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Patch_Medic_01.tscn" id="110_va0fe"]
+[ext_resource type="PackedScene" uid="uid://cpbwf1s5roivl" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Patch_Medic_02.tscn" id="111_na5t5"]
+[ext_resource type="PackedScene" uid="uid://dxn8bqf08ccar" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Patch_Rank_01.tscn" id="112_yv1wh"]
+[ext_resource type="PackedScene" uid="uid://cw8rm4llny18t" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Patch_Rank_02.tscn" id="113_jih4h"]
+[ext_resource type="PackedScene" uid="uid://b2bfkwh4e4kxa" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Patch_Rank_03.tscn" id="114_yguoe"]
+[ext_resource type="PackedScene" uid="uid://csa1tliaware8" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Patch_Star_01.tscn" id="115_i03wh"]
+[ext_resource type="PackedScene" uid="uid://c7sp307v58tcl" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Patch_Star_02.tscn" id="116_2thrf"]
+[ext_resource type="PackedScene" uid="uid://ck21wlix2xml7" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/PickUps/SM_PickUp_Armor_01.tscn" id="117_ikpqa"]
+[ext_resource type="PackedScene" uid="uid://k2oiie5442xj" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/PickUps/SM_PickUp_Armor_02.tscn" id="118_gooia"]
+[ext_resource type="PackedScene" uid="uid://bk2il4f5v5xnn" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/PickUps/SM_PickUp_Armor_03.tscn" id="119_f4jof"]
+[ext_resource type="PackedScene" uid="uid://7xktnk8pxsf7" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/PickUps/SM_PickUp_Bag_01.tscn" id="120_426jg"]
+[ext_resource type="PackedScene" uid="uid://bjjy0chugvgr" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/PickUps/SM_PickUp_Bag_02.tscn" id="121_qs1s7"]
+[ext_resource type="PackedScene" uid="uid://0i78vca5sje1" path="res://Assets/PolygonBattleRoyale/Prefabs/Characters/PickUps/SM_PickUp_Bag_03.tscn" id="122_og655"]
+[ext_resource type="PackedScene" uid="uid://dh3bk5l4nf3lm" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Beach_01.tscn" id="123_wrgrk"]
+[ext_resource type="PackedScene" uid="uid://s4kh16tjs5qn" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Beach_Staight_01.tscn" id="124_nksma"]
+[ext_resource type="PackedScene" uid="uid://ddvbwy6862nhf" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Beach_Staight_02.tscn" id="125_x3iqe"]
+[ext_resource type="PackedScene" uid="uid://dynlmb6rf0dwf" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Bridge_01.tscn" id="126_l0cub"]
+[ext_resource type="PackedScene" uid="uid://du0lxk8frcfcm" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Bridge_02.tscn" id="127_jmi4e"]
+[ext_resource type="PackedScene" uid="uid://oj3geftqlpvj" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Bridge_Broken_01.tscn" id="128_kl042"]
+[ext_resource type="PackedScene" uid="uid://dbyjftbds5mk8" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Bridge_Support_01.tscn" id="129_j0af4"]
+[ext_resource type="PackedScene" uid="uid://c7gp2rfeac2i" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Concrete_Base_01.tscn" id="130_3s6w3"]
+[ext_resource type="PackedScene" uid="uid://bs7uhm7e66xri" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_DirtRoad_End_01.tscn" id="131_vdfh4"]
+[ext_resource type="PackedScene" uid="uid://dwa45jmme1tv8" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_DirtRoad_Straight_01.tscn" id="132_7rp6c"]
+[ext_resource type="PackedScene" uid="uid://cm7wwgs2r8dvi" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Dock_01.tscn" id="133_m3ovl"]
+[ext_resource type="PackedScene" uid="uid://dw1ynjl64b2xa" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Dock_Poles_01.tscn" id="134_hjnxy"]
+[ext_resource type="PackedScene" uid="uid://dulnm7wers8b4" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Grass_Circle_01.tscn" id="135_we256"]
+[ext_resource type="PackedScene" uid="uid://bc2s8b3r7kaab" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Grass_Circle_02.tscn" id="136_xn6c6"]
+[ext_resource type="PackedScene" uid="uid://b5njcbuyhlvxk" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Grass_Square_01.tscn" id="137_hkmqc"]
+[ext_resource type="PackedScene" uid="uid://erlmgn4ue5ix" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Port_Boat_Tie_01.tscn" id="138_72aal"]
+[ext_resource type="PackedScene" uid="uid://dqjj74gxporrr" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Port_Concrete_Slab_01.tscn" id="139_14xcp"]
+[ext_resource type="PackedScene" uid="uid://x7ud7noew3wb" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Port_Wall_01.tscn" id="140_8lm13"]
+[ext_resource type="PackedScene" uid="uid://c26nntxip8sih" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Port_Wall_02.tscn" id="141_e6jfs"]
+[ext_resource type="PackedScene" uid="uid://b0siw2gnlv5vo" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Port_Wall_Corner_01.tscn" id="142_ccaf1"]
+[ext_resource type="PackedScene" uid="uid://dpivvul7oc0fy" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Road_Corner_01.tscn" id="143_e7b7p"]
+[ext_resource type="PackedScene" uid="uid://5xv6wqxt51yn" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Road_Corner_02.tscn" id="144_62bbd"]
+[ext_resource type="PackedScene" uid="uid://c48vvdj6ngski" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Road_Cross_01.tscn" id="145_u1oo7"]
+[ext_resource type="PackedScene" uid="uid://b1bi4aiouyqd" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Road_Straight_01.tscn" id="146_rfsc7"]
+[ext_resource type="PackedScene" uid="uid://dow7cgph31gf8" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Road_Straight_02.tscn" id="147_56v2h"]
+[ext_resource type="PackedScene" uid="uid://b3578d44uo4v5" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Road_Straight_03.tscn" id="148_j5gd2"]
+[ext_resource type="PackedScene" uid="uid://cadwlxrfb1mvi" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Road_Straight_Damaged_01.tscn" id="149_lbnex"]
+[ext_resource type="PackedScene" uid="uid://bj2bihmevnup4" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Road_Straight_Damaged_02.tscn" id="150_7y25k"]
+[ext_resource type="PackedScene" uid="uid://33j1neiiscmy" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Road_Straight_Damaged_03.tscn" id="151_tje6i"]
+[ext_resource type="PackedScene" uid="uid://3ojilk6s6ker" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Road_Straight_End_01.tscn" id="152_r18nh"]
+[ext_resource type="PackedScene" uid="uid://w0lra8fs7e0b" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Road_T_01.tscn" id="153_roqc5"]
+[ext_resource type="PackedScene" uid="uid://b06mjach5o2vw" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rock_01.tscn" id="154_bs5x0"]
+[ext_resource type="PackedScene" uid="uid://caweu6q6tph02" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rock_02.tscn" id="155_gekwo"]
+[ext_resource type="PackedScene" uid="uid://cg33m67a0cft3" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rubble_Pebbles_01.tscn" id="156_cig1a"]
+[ext_resource type="PackedScene" uid="uid://j6oal1qk6b2" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rubble_Pebbles_02.tscn" id="157_6j0w7"]
+[ext_resource type="PackedScene" uid="uid://c3tgwffg7eq2q" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rubble_Pebbles_03.tscn" id="158_xuqwd"]
+[ext_resource type="PackedScene" uid="uid://dfl0irjsn1hbu" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rubble_Pile_01.tscn" id="159_8j6c4"]
+[ext_resource type="PackedScene" uid="uid://1vgff3v55q1g" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rubble_Pile_02.tscn" id="160_hxthx"]
+[ext_resource type="PackedScene" uid="uid://44obbo27cgxl" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rubble_Plank_01.tscn" id="161_iq25c"]
+[ext_resource type="PackedScene" uid="uid://ux58fvptbymh" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rubble_Plank_02.tscn" id="162_wgpch"]
+[ext_resource type="PackedScene" uid="uid://r0otnl4fogj6" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rubble_Plank_03.tscn" id="163_ykdig"]
+[ext_resource type="PackedScene" uid="uid://hxuyaq0h5x61" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rubble_Stone_01.tscn" id="164_xo6s8"]
+[ext_resource type="PackedScene" uid="uid://s506faine0r5" path="res://Assets/PolygonBattleRoyale/Prefabs/Environments/SM_Env_Rubble_Stone_02.tscn" id="165_17i7f"]
+[ext_resource type="PackedScene" uid="uid://c04shvmgq3j3h" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Env_Bush_01.tscn" id="166_d45qj"]
+[ext_resource type="PackedScene" uid="uid://bmb8lq26euntx" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Env_Bush_02.tscn" id="167_eqcl0"]
+[ext_resource type="PackedScene" uid="uid://b3rl7qpqejexh" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Env_Bush_03.tscn" id="168_e4du2"]
+[ext_resource type="PackedScene" uid="uid://ccchphwymkij6" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Env_Bush_04.tscn" id="169_grhc5"]
+[ext_resource type="PackedScene" uid="uid://cs2bu1mvsckj1" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Cloud_01.tscn" id="170_yb266"]
+[ext_resource type="PackedScene" uid="uid://olbavwdp4tha" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Cloud_02.tscn" id="171_lhs37"]
+[ext_resource type="PackedScene" uid="uid://xv1ha5x6vqxg" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Cloud_03.tscn" id="172_67pss"]
+[ext_resource type="PackedScene" uid="uid://dfkhvq7easj0m" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Cloud_04.tscn" id="173_35awh"]
+[ext_resource type="PackedScene" uid="uid://s1tx63hrd2wm" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Grass_Patch_01.tscn" id="174_veklw"]
+[ext_resource type="PackedScene" uid="uid://dsk8fbi7tb65m" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Grass_Patch_02.tscn" id="175_0dx7h"]
+[ext_resource type="PackedScene" uid="uid://c8nnq60n8tqf2" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Mountains_Grass_01.tscn" id="176_tpt2o"]
+[ext_resource type="PackedScene" uid="uid://rfqpxjr71ds2" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Mountains_Grass_02.tscn" id="177_g1r15"]
+[ext_resource type="PackedScene" uid="uid://cal7jj3v3v00x" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Mountains_Snow_01.tscn" id="178_x4nko"]
+[ext_resource type="PackedScene" uid="uid://plc2k6ugjxhb" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Mountains_Soft_01.tscn" id="179_hghl0"]
+[ext_resource type="PackedScene" uid="uid://cjx02mkr2sdiv" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Small_Rocks_01.tscn" id="180_01cvs"]
+[ext_resource type="PackedScene" uid="uid://cnuc18l8ap1hr" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Small_Rocks_02.tscn" id="181_rvy3c"]
+[ext_resource type="PackedScene" uid="uid://dwgbw1wfmolcy" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Tree_01.tscn" id="182_ut8il"]
+[ext_resource type="PackedScene" uid="uid://r6s0k2k6p28l" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Tree_02.tscn" id="183_8vla4"]
+[ext_resource type="PackedScene" uid="uid://bj3pfpcho0p05" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Tree_03.tscn" id="184_803m5"]
+[ext_resource type="PackedScene" uid="uid://b7ombxj0wj6uk" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_Tree_04.tscn" id="185_xgotn"]
+[ext_resource type="PackedScene" uid="uid://hyu1dabccfie" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_TreeDead_01.tscn" id="186_drs7j"]
+[ext_resource type="PackedScene" uid="uid://c2727d2ocyxea" path="res://Assets/PolygonBattleRoyale/Prefabs/Generic/SM_Generic_TreeStump_01.tscn" id="187_ns7fp"]
+[ext_resource type="PackedScene" uid="uid://o5couagul5dw" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_AmmoBox_01.tscn" id="188_3qls7"]
+[ext_resource type="PackedScene" uid="uid://ct5j74ly6md2k" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Bandage_01.tscn" id="189_lhbdb"]
+[ext_resource type="PackedScene" uid="uid://cg60t4c3wcld6" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Bandage_02.tscn" id="190_am8k8"]
+[ext_resource type="PackedScene" uid="uid://brj4a6yb3n6po" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Barrel_01.tscn" id="191_40hkp"]
+[ext_resource type="PackedScene" uid="uid://ceoq7l6n76g3b" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Barrel_02.tscn" id="192_xfmsb"]
+[ext_resource type="PackedScene" uid="uid://cleti5gmtl060" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Barricade_01.tscn" id="193_3re5e"]
+[ext_resource type="PackedScene" uid="uid://dp8sr8rmexpfr" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Barrier_01.tscn" id="194_fsq0b"]
+[ext_resource type="PackedScene" uid="uid://c20dyfpv5e0nt" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Barrier_02.tscn" id="195_3kko2"]
+[ext_resource type="PackedScene" uid="uid://dwbsfc0wkbj1u" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Barrier_03.tscn" id="196_gtb25"]
+[ext_resource type="PackedScene" uid="uid://bcj0grsj5b2qb" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Barrier_04.tscn" id="197_i4pjb"]
+[ext_resource type="PackedScene" uid="uid://ck8txhmm5puct" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Barrier_Dirt_01.tscn" id="198_wtale"]
+[ext_resource type="PackedScene" uid="uid://cr0mc75pcr4jj" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_BaseWall_01.tscn" id="199_1ujvu"]
+[ext_resource type="PackedScene" uid="uid://btp3m16tgxq0j" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_BaseWall_Broken_01.tscn" id="200_dmb80"]
+[ext_resource type="PackedScene" uid="uid://bno4nhcfvpy1o" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_BaseWall_Broken_02.tscn" id="201_sdibu"]
+[ext_resource type="PackedScene" uid="uid://dk8eyp3p0py4t" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_BaseWall_Post_01.tscn" id="202_8stan"]
+[ext_resource type="PackedScene" uid="uid://b5sr1hv6ssqwp" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Benchpress_01.tscn" id="203_s4wh7"]
+[ext_resource type="PackedScene" uid="uid://b5mrcn82fs1s1" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_BriefcaseBomb_01.tscn" id="204_eyulw"]
+[ext_resource type="PackedScene" uid="uid://banoy80nl2okw" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_BunkBed_01.tscn" id="205_nbecm"]
+[ext_resource type="PackedScene" uid="uid://c7ocqosmmer4m" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_C4_01.tscn" id="206_nitb6"]
+[ext_resource type="PackedScene" uid="uid://yli0bwcigbue" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_C4_02.tscn" id="207_4g2bc"]
+[ext_resource type="PackedScene" uid="uid://d0frgfbw6uvwi" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_CardboardBox_01.tscn" id="208_3bna1"]
+[ext_resource type="PackedScene" uid="uid://fdxewk6k6ygs" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Cinderblock_01.tscn" id="209_hnseg"]
+[ext_resource type="PackedScene" uid="uid://o7s770n0kw7f" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Cinderblock_Wall_01.tscn" id="210_4ql2x"]
+[ext_resource type="PackedScene" uid="uid://by22njuuvxf7e" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Container_01.tscn" id="211_bf32r"]
+[ext_resource type="PackedScene" uid="uid://bbsyysiulm4d5" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Container_Small_01.tscn" id="212_pohup"]
+[ext_resource type="PackedScene" uid="uid://8uo72o01eaj1" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Crate_01.tscn" id="213_bhwsy"]
+[ext_resource type="PackedScene" uid="uid://enn3vw4p5xck" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Crate_Large_01.tscn" id="214_gxf2a"]
+[ext_resource type="PackedScene" uid="uid://dp3uhmyx7m4te" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Crate_Medical_01.tscn" id="215_luaq8"]
+[ext_resource type="PackedScene" uid="uid://cglbjrbis2toe" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Crate_Small_01.tscn" id="216_hlsnr"]
+[ext_resource type="PackedScene" uid="uid://dbstijcfp0m3i" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_EmergencyDrop_01.tscn" id="217_qmw7h"]
+[ext_resource type="PackedScene" uid="uid://ddxah7xsjbm5a" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_EmergencyDrop_Crate_01.tscn" id="218_vuthf"]
+[ext_resource type="PackedScene" uid="uid://2ijf0xs4qjkl" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Gauze_01.tscn" id="219_tn16q"]
+[ext_resource type="PackedScene" uid="uid://85o8thftokxb" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Generator_01.tscn" id="220_tydgs"]
+[ext_resource type="PackedScene" uid="uid://b1r066astvxr" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_GuardTower_01.tscn" id="221_xrwr5"]
+[ext_resource type="PackedScene" uid="uid://i0u2x266oqki" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_HeadBase_Black.tscn" id="222_x0tlk"]
+[ext_resource type="PackedScene" uid="uid://b4elat82t6sbe" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_HeadBase_Grey.tscn" id="223_jjh7h"]
+[ext_resource type="PackedScene" uid="uid://rg8roafktdj2" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_HeadBase_Skin.tscn" id="224_dr8cf"]
+[ext_resource type="PackedScene" uid="uid://t7auh3gw7trw" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_HeadBase_White.tscn" id="225_66jwh"]
+[ext_resource type="PackedScene" uid="uid://b5uigly1htmp6" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Iron_Sheet_01.tscn" id="226_2lv47"]
+[ext_resource type="PackedScene" uid="uid://def7qhdf3w5ab" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Iron_Sheet_02.tscn" id="227_j1syn"]
+[ext_resource type="PackedScene" uid="uid://vxpsptl2aye5" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Iron_Sheet_03.tscn" id="228_jxidd"]
+[ext_resource type="PackedScene" uid="uid://txob5855ropa" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Key_01.tscn" id="229_lqhkt"]
+[ext_resource type="PackedScene" uid="uid://h60nkj0tno7s" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Key_02.tscn" id="230_1lau4"]
+[ext_resource type="PackedScene" uid="uid://e56fssbeirrv" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Key_03.tscn" id="231_0p1vw"]
+[ext_resource type="PackedScene" uid="uid://bh1guqk81s6c8" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_MedicalBox_01.tscn" id="232_0q068"]
+[ext_resource type="PackedScene" uid="uid://dnf65hbb5iuy5" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_MedicalBox_02.tscn" id="233_15pts"]
+[ext_resource type="PackedScene" uid="uid://ejxqbc34l3q8" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_MissileStack_01.tscn" id="234_l3cf6"]
+[ext_resource type="PackedScene" uid="uid://60ixxul5pj85" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Needle_01.tscn" id="235_r6ymk"]
+[ext_resource type="PackedScene" uid="uid://b8qqcske7gitk" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Padlock_01.tscn" id="236_uj3py"]
+[ext_resource type="PackedScene" uid="uid://byjdenwwhx2ea" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Padlock_02.tscn" id="237_ifhb7"]
+[ext_resource type="PackedScene" uid="uid://xjkgyf4rp5nb" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Pallet_01.tscn" id="238_eolgq"]
+[ext_resource type="PackedScene" uid="uid://dgo20302fmhal" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Pallet_Loaded_01.tscn" id="239_l7m00"]
+[ext_resource type="PackedScene" uid="uid://qc1yw2wb1exf" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Pallet_Loaded_02.tscn" id="240_584ap"]
+[ext_resource type="PackedScene" uid="uid://bskdeufjlp7mk" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_PalletStack_01.tscn" id="241_0yvol"]
+[ext_resource type="PackedScene" uid="uid://wssrf01rkrtp" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Parachute_01.tscn" id="242_06lst"]
+[ext_resource type="PackedScene" uid="uid://ba2uyhp8y5frg" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Pills_01.tscn" id="243_h5do3"]
+[ext_resource type="PackedScene" uid="uid://cdkaeixbly77b" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Pills_02.tscn" id="244_j5hr5"]
+[ext_resource type="PackedScene" uid="uid://dj23x6teusggh" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Portaloo_01.tscn" id="245_po0kq"]
+[ext_resource type="PackedScene" uid="uid://cfq8h475awdrh" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Propane_01.tscn" id="246_voqek"]
+[ext_resource type="PackedScene" uid="uid://21qoevsdh6rs" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Propane_Tall_01.tscn" id="247_b0t46"]
+[ext_resource type="PackedScene" uid="uid://bbfk3iid1jb5w" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_RadioTower_01.tscn" id="248_fckic"]
+[ext_resource type="PackedScene" uid="uid://dyrh0a6y7d4oi" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Range_Trable_01.tscn" id="249_88esc"]
+[ext_resource type="PackedScene" uid="uid://d2vreqnrj2lp6" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Range_Wall_01.tscn" id="250_a2x8t"]
+[ext_resource type="PackedScene" uid="uid://cldn5dpnxqfo" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Range_Wall_02.tscn" id="251_a0rt5"]
+[ext_resource type="PackedScene" uid="uid://dggrvtfoe7xgr" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Range_Wall_03.tscn" id="252_pityp"]
+[ext_resource type="PackedScene" uid="uid://bd0fqreq33824" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Range_Wall_Door_01.tscn" id="253_stu4p"]
+[ext_resource type="PackedScene" uid="uid://3frlubv6qypq" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Range_Wall_Half_01.tscn" id="254_bc7pk"]
+[ext_resource type="PackedScene" uid="uid://dnl6tgddbcxvt" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Range_Wall_Post_01.tscn" id="255_fa6co"]
+[ext_resource type="PackedScene" uid="uid://dx7rujf78n82x" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Range_Wall_Window_01.tscn" id="256_vxmgh"]
+[ext_resource type="PackedScene" uid="uid://c6vo5os1n6ofm" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Rubbish_Bottle_01.tscn" id="257_k23xt"]
+[ext_resource type="PackedScene" uid="uid://7811ak5jdl6t" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Rubbish_Can_01.tscn" id="258_tbqfy"]
+[ext_resource type="PackedScene" uid="uid://cx5wkceul3f5t" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Rubbish_Can_02.tscn" id="259_ps55y"]
+[ext_resource type="PackedScene" uid="uid://hrf4t6trvggv" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Rubbish_Paper_01.tscn" id="260_areyr"]
+[ext_resource type="PackedScene" uid="uid://d1gfcrcg10ka4" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Rubbish_Paper_02.tscn" id="261_0f5yh"]
+[ext_resource type="PackedScene" uid="uid://nsvgyuquwvsm" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Rubbish_Paper_03.tscn" id="262_j0dw5"]
+[ext_resource type="PackedScene" uid="uid://cwr8phwkrg4mk" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Rubbish_Papers_01.tscn" id="263_tp688"]
+[ext_resource type="PackedScene" uid="uid://d3eix6tg6rdrm" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Rubbish_Papers_02.tscn" id="264_kcxf4"]
+[ext_resource type="PackedScene" uid="uid://8m14kt0ki802" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Rubbish_Papers_03.tscn" id="265_xjmqq"]
+[ext_resource type="PackedScene" uid="uid://bxs2ghepcvrpk" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Slatbox_01.tscn" id="266_1bf18"]
+[ext_resource type="PackedScene" uid="uid://bxq31a1qryy0h" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Spotlight_01.tscn" id="267_wmsy4"]
+[ext_resource type="PackedScene" uid="uid://cl8yd312mb3qm" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_TankTrap_01.tscn" id="268_7s6dw"]
+[ext_resource type="PackedScene" uid="uid://bv4pt4i8gl5me" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Target_01.tscn" id="269_lv0x1"]
+[ext_resource type="PackedScene" uid="uid://buelioi2xccuj" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Tire_01.tscn" id="270_w15cu"]
+[ext_resource type="PackedScene" uid="uid://ver7vuj3j0fo" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_TireStack_01.tscn" id="271_dokqi"]
+[ext_resource type="PackedScene" uid="uid://bxphidqjelpau" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Transformer_01.tscn" id="272_y56qv"]
+[ext_resource type="PackedScene" uid="uid://cl7jf7313245g" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_WeaponCase_01.tscn" id="273_miwq8"]
+[ext_resource type="PackedScene" uid="uid://c1x5k3u2abh27" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_WireFence_01.tscn" id="274_2auub"]
+[ext_resource type="PackedScene" uid="uid://dgrctwryin8kh" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_WireFence_02.tscn" id="275_va0d1"]
+[ext_resource type="PackedScene" uid="uid://ch5dw8b1rs0w8" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Wirespool_01.tscn" id="276_kbxvv"]
+[ext_resource type="PackedScene" uid="uid://dyvebvrnyxmw7" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_Wirespool_02.tscn" id="277_u1qt4"]
+[ext_resource type="PackedScene" uid="uid://vys60u1kisfh" path="res://Assets/PolygonBattleRoyale/Prefabs/Props/SM_Prop_WoodPlank_01.tscn" id="278_dcdfr"]
+[ext_resource type="PackedScene" uid="uid://pdmgk4ceb5p0" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Armored_Car_01.tscn" id="279_t3d6e"]
+[ext_resource type="PackedScene" uid="uid://cv8xsmgavxhmw" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Armored_Car_Destroyed_01.tscn" id="280_bb07u"]
+[ext_resource type="PackedScene" uid="uid://c57msxq0iy7bp" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Bike_01.tscn" id="281_yra3d"]
+[ext_resource type="PackedScene" uid="uid://cqls576e3r63b" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Bike_Destroyed_01.tscn" id="282_anac7"]
+[ext_resource type="PackedScene" uid="uid://doecwc4irfxjy" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Boat_01.tscn" id="283_bgdp7"]
+[ext_resource type="PackedScene" uid="uid://cw02e4pl2mibq" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Boat_Destroyed_01.tscn" id="284_jsebp"]
+[ext_resource type="PackedScene" uid="uid://dw6f1rpegy8" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Buggy_01.tscn" id="285_x4cg0"]
+[ext_resource type="PackedScene" uid="uid://cmcbwv0skf4r3" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Buggy_Destroyed_01.tscn" id="286_g20ie"]
+[ext_resource type="PackedScene" uid="uid://o3nldhd4h5d3" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Car_01.tscn" id="287_lc7gc"]
+[ext_resource type="PackedScene" uid="uid://cr5b5p5no1lwk" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Car_Clean_01.tscn" id="288_ec7bj"]
+[ext_resource type="PackedScene" uid="uid://cklo67u6jopvi" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Car_Destroyed_01.tscn" id="289_767i1"]
+[ext_resource type="PackedScene" uid="uid://di12hr5x4727i" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Car_Plate_01.tscn" id="290_6r2vi"]
+[ext_resource type="PackedScene" uid="uid://dcihpvyhek8fa" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Light_Armored_Car_01.tscn" id="291_fc6hf"]
+[ext_resource type="PackedScene" uid="uid://cxlhjm5nenk2k" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Light_Car_Destroyed_01.tscn" id="292_1h7vi"]
+[ext_resource type="PackedScene" uid="uid://nai7jyxsty8i" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Plane_01.tscn" id="293_xf1u2"]
+[ext_resource type="PackedScene" uid="uid://pt64pe47gw8p" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Plane_Destroyed_01.tscn" id="294_si1k4"]
+[ext_resource type="PackedScene" uid="uid://djakmj43cx8wv" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Tank_Russia_01.tscn" id="295_arr32"]
+[ext_resource type="PackedScene" uid="uid://c708klw7esqkq" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Tank_Russia_Destroyed_01.tscn" id="296_lqpga"]
+[ext_resource type="PackedScene" uid="uid://sfl3xn584ii4" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Tank_USA_01.tscn" id="297_chs5x"]
+[ext_resource type="PackedScene" uid="uid://cgic035q4kngb" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Tank_USA_Destroyed_01.tscn" id="298_2jwov"]
+[ext_resource type="PackedScene" uid="uid://fket4m01h2hi" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Truck_01.tscn" id="299_ljmp3"]
+[ext_resource type="PackedScene" uid="uid://b02ilbi1ffj4y" path="res://Assets/PolygonBattleRoyale/Prefabs/Vehicles/SM_Veh_Truck_Destroyed_01.tscn" id="300_gncjc"]
+[ext_resource type="PackedScene" uid="uid://c8x8wu7is6x7u" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Ammo_BulletLarge_01.tscn" id="301_y54hp"]
+[ext_resource type="PackedScene" uid="uid://dvqhjwn6wksvf" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Attachment_Grip_01.tscn" id="302_r5ntv"]
+[ext_resource type="PackedScene" uid="uid://k2hkfkrsp5mf" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Attachment_Redot_01.tscn" id="303_6al5y"]
+[ext_resource type="PackedScene" uid="uid://b2tblbwcanhbo" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Attachment_Silencer_01.tscn" id="304_0kxuk"]
+[ext_resource type="PackedScene" uid="uid://bl6i5hp46ax6t" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Bat_01.tscn" id="305_60t0w"]
+[ext_resource type="PackedScene" uid="uid://jmjiwxu1divo" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Bullet_Ammo_01.tscn" id="306_3ciox"]
+[ext_resource type="PackedScene" uid="uid://bl4khktb8wcgb" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Bullet_Ammo_02.tscn" id="307_tcfi5"]
+[ext_resource type="PackedScene" uid="uid://bo05yres3ofij" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Bullet_Ammo_Box_01.tscn" id="308_4xsun"]
+[ext_resource type="PackedScene" uid="uid://b4sannrronpgd" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Bullet_Ammo_Box_02.tscn" id="309_ukoj1"]
+[ext_resource type="PackedScene" uid="uid://dcgvtcgdi4rt3" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Bullet_Ammo_Pile_01.tscn" id="310_pysuj"]
+[ext_resource type="PackedScene" uid="uid://djeaxff0s2e5x" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Crosshair_01.tscn" id="311_hylke"]
+[ext_resource type="PackedScene" uid="uid://0bmend4uowcv" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Crosshair_02.tscn" id="312_xtmjn"]
+[ext_resource type="PackedScene" uid="uid://f8rn4fdvghaa" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Crosshair_03.tscn" id="313_utnp2"]
+[ext_resource type="PackedScene" uid="uid://bob6kb765x870" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Crosshair_04.tscn" id="314_cqgud"]
+[ext_resource type="PackedScene" uid="uid://vejclgu7h7rg" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Crosshair_05.tscn" id="315_f27nn"]
+[ext_resource type="PackedScene" uid="uid://b6vw0i0g2n775" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Crosshair_Sniper_01.tscn" id="316_wibtq"]
+[ext_resource type="PackedScene" uid="uid://5oi50oqilkyx" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Crowbar_01.tscn" id="317_6h185"]
+[ext_resource type="PackedScene" uid="uid://bujy5lyjm3ec2" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Fireaxe_01.tscn" id="318_cyp6h"]
+[ext_resource type="PackedScene" uid="uid://bemrrd8u0wqc" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Flare_Ammo_01.tscn" id="319_qkdlp"]
+[ext_resource type="PackedScene" uid="uid://cbl8nobq8n57h" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Grenade_01.tscn" id="320_g1mjb"]
+[ext_resource type="PackedScene" uid="uid://ccpnm3pcla80f" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Grenade_Ammo_01.tscn" id="321_5mtme"]
+[ext_resource type="PackedScene" uid="uid://cijqltb2ucrbq" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Grenade_Ammo_Box_01.tscn" id="322_6wuri"]
+[ext_resource type="PackedScene" uid="uid://bdreqdsnykiw0" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Grenade_Ammo_Pile_01.tscn" id="323_qr76o"]
+[ext_resource type="PackedScene" uid="uid://xdfovfy2d3x0" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Grenade_Launcher_01.tscn" id="324_dfei8"]
+[ext_resource type="PackedScene" uid="uid://buqp35hxwyct1" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Grenade_Smoke_01.tscn" id="325_umr8y"]
+[ext_resource type="PackedScene" uid="uid://dxieink8klrlo" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Machete_01.tscn" id="326_gygmh"]
+[ext_resource type="PackedScene" uid="uid://bd2brmjcwoca7" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_MachineGun_01.tscn" id="327_ogujv"]
+[ext_resource type="PackedScene" uid="uid://c4fcqo45tl06g" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Pan_01.tscn" id="328_gicwm"]
+[ext_resource type="PackedScene" uid="uid://cf4p2ryboqodx" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Pickaxe_01.tscn" id="329_67cwf"]
+[ext_resource type="PackedScene" uid="uid://dkpfx2r6vpkyb" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Pistol_Ammo_01.tscn" id="330_b6l2y"]
+[ext_resource type="PackedScene" uid="uid://b78jwnttx6nma" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Pistol_Ammo_Box_01.tscn" id="331_wmiec"]
+[ext_resource type="PackedScene" uid="uid://ca0mhsxbmhj0d" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Pistol_Ammo_Pile_01.tscn" id="332_xrj3f"]
+[ext_resource type="PackedScene" uid="uid://thfejrr4b23e" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Pistol_Bullet_01.tscn" id="333_40fbk"]
+[ext_resource type="PackedScene" uid="uid://bcpl3lqtu57cj" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Pistol_Flare_01.tscn" id="334_tw5m2"]
+[ext_resource type="PackedScene" uid="uid://dmwpvqw2gvtyj" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Pistol_Heavy_01.tscn" id="335_kss7t"]
+[ext_resource type="PackedScene" uid="uid://cqfo8yoilmtms" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Pistol_Revolver_01.tscn" id="336_leuv8"]
+[ext_resource type="PackedScene" uid="uid://bl3mg3fe327si" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Revolver_Snub_01.tscn" id="337_le3fr"]
+[ext_resource type="PackedScene" uid="uid://cf6pg8pcjgxfo" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Rifle_Assault_01.tscn" id="338_jiwpf"]
+[ext_resource type="PackedScene" uid="uid://b1tj0rsawhjca" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Rifle_Assault_02.tscn" id="339_sm1xp"]
+[ext_resource type="PackedScene" uid="uid://c703e2vjhplht" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Rifle_Assault_03.tscn" id="340_tuv3l"]
+[ext_resource type="PackedScene" uid="uid://choro04okde4l" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Rifle_Assault_04.tscn" id="341_k1xp7"]
+[ext_resource type="PackedScene" uid="uid://cra1yq0hl64h6" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Rifle_Assault_05.tscn" id="342_gu4qs"]
+[ext_resource type="PackedScene" uid="uid://d0xdru407me1u" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_RiotShield_01.tscn" id="343_dbgwt"]
+[ext_resource type="PackedScene" uid="uid://dlpffx46wxwth" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_RPG_01.tscn" id="344_sjftb"]
+[ext_resource type="PackedScene" uid="uid://ciewhxccq1srg" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_RPG_Rocket_Active_01.tscn" id="345_k72rj"]
+[ext_resource type="PackedScene" uid="uid://dchx21hnbx2p2" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Shotgun_01.tscn" id="346_kl41t"]
+[ext_resource type="PackedScene" uid="uid://cost2y5aq4ls2" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Shotgun_Ammo_01.tscn" id="347_shfm4"]
+[ext_resource type="PackedScene" uid="uid://c5k2vgsyamd1n" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Shotgun_Ammo_Box_01.tscn" id="348_bvnyp"]
+[ext_resource type="PackedScene" uid="uid://bdr77rb1hb4o4" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Shotgun_Ammo_Pile_01.tscn" id="349_mcn54"]
+[ext_resource type="PackedScene" uid="uid://ckqgwegw6d2qe" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Sniper_01.tscn" id="350_emhpt"]
+[ext_resource type="PackedScene" uid="uid://bgdtw3pqb3jep" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Sniper_Heavy_01.tscn" id="351_p75hc"]
+[ext_resource type="PackedScene" uid="uid://l72ilblulkn1" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Sniper_Lite_01.tscn" id="352_axgey"]
+[ext_resource type="PackedScene" uid="uid://bb3b0ymmxuyox" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_Sniper_Mil_01.tscn" id="353_22w1r"]
+[ext_resource type="PackedScene" uid="uid://c5dd23tmwkb26" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_SubMGun_01.tscn" id="354_an6sr"]
+[ext_resource type="PackedScene" uid="uid://j4es4ok24qxh" path="res://Assets/PolygonBattleRoyale/Prefabs/Weapons/SM_Wep_SubMGun_Lite_01.tscn" id="355_okac0"]
+
+[node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_inb8a")
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 1, -10)
+cull_mask = 16777215
+current = true
+fov = 60.0
+near = 0.3
+far = 1000.0
+
+[node name="Directional Light" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.86602545, 0.38302213, -0.32139385, -6.6969726e-08, 0.6427877, 0.7660444, 0.49999997, 0.66341394, -0.5566704, 0, 3, 0)
+light_color = Color(1, 0.95686275, 0.8392157, 1)
+light_bake_mode = 0
+shadow_enabled = true
+shadow_bias = 0.05
+shadow_normal_bias = 0.4
+
+[node name="Buildings" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -137.02713, 4.3041344, -42.500614)
+
+[node name="SM_Bld_House_01" parent="Buildings" instance=ExtResource("1_f7kf0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.476582, -4.3041344, -35.783688)
+
+[node name="SM_Bld_House_02" parent="Buildings" instance=ExtResource("2_fs6xx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7151489, -4.3041344, -35.783688)
+
+[node name="SM_Bld_House_03" parent="Buildings" instance=ExtResource("3_denjl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.476582, -4.3041344, -10.022251)
+
+[node name="SM_Bld_House_Glass_01" parent="Buildings" instance=ExtResource("4_4oxoq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7151489, -4.3041344, 41.500614)
+
+[node name="SM_Bld_SmallBuilding_01" parent="Buildings" instance=ExtResource("5_8c1sx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.476582, -4.3041344, 15.73918)
+
+[node name="SM_Bld_SmallBuilding_02" parent="Buildings" instance=ExtResource("6_u8ajy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.995548, -4.3041344, 41.350636)
+
+[node name="SM_Bld_SmallBuilding_03" parent="Buildings" instance=ExtResource("7_pmkad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.046288, -4.3041344, -10.022251)
+
+[node name="SM_Bld_Tent_01" parent="Buildings" instance=ExtResource("8_srbc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7151508, -4.3041344, -10.022251)
+
+[node name="SM_Bld_Tent_02" parent="Buildings" instance=ExtResource("9_xkgcr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.046284, -4.3041344, 15.7391815)
+
+[node name="SM_Bld_Warehouse_01" parent="Buildings" instance=ExtResource("10_awjae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.046288, -4.3041344, -35.783688)
+
+[node name="SM_Bld_Window_Bars_01" parent="Buildings" instance=ExtResource("11_5qsoq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.476582, -4.3041344, 41.500614)
+
+[node name="SM_Bld_WoodenShack_01" parent="Buildings" instance=ExtResource("12_vsuae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7151489, -4.3041344, 15.73918)
+
+[node name="Characters" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.53159, -0.28543663, -5.7171226)
+
+[node name="Character_70sFemale_01" parent="Characters" instance=ExtResource("14_fs6xx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 5)
+
+[node name="Character_BusinessMale_01" parent="Characters" instance=ExtResource("15_denjl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 5)
+
+[node name="Character_GhillieSuit_01" parent="Characters" instance=ExtResource("16_4oxoq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5)
+
+[node name="Character_GothFemale_01" parent="Characters" instance=ExtResource("17_8c1sx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5)
+
+[node name="Character_MercenaryFemale_01" parent="Characters" instance=ExtResource("18_u8ajy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 5)
+
+[node name="Character_MercenaryMale_01" parent="Characters" instance=ExtResource("19_pmkad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 2)
+
+[node name="Character_MilitaryFemale_01" parent="Characters" instance=ExtResource("20_srbc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 2)
+
+[node name="Character_MilitaryMale_01" parent="Characters" instance=ExtResource("21_xkgcr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+
+[node name="Character_RedneckMale_01" parent="Characters" instance=ExtResource("22_awjae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
+
+[node name="Character_SportsBraFemale_01" parent="Characters" instance=ExtResource("23_5qsoq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 2)
+
+[node name="Character_SportyFemale_01" parent="Characters" instance=ExtResource("24_vsuae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -1)
+
+[node name="Character_SportyFemale_02" parent="Characters" instance=ExtResource("25_hnegn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1)
+
+[node name="Character_SportyMale_01" parent="Characters" instance=ExtResource("26_4qqcx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="Character_SportyMale_02" parent="Characters" instance=ExtResource("27_6105k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
+
+[node name="Character_ToplessMale_01" parent="Characters" instance=ExtResource("28_ww4xw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -1)
+
+[node name="Character_Attachments" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.53159, -24.917168, -57)
+
+[node name="SM_Chr_Attach_Ammo_01" parent="Character_Attachments" instance=ExtResource("28_x1y3e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.65596, 24.917168, 36.428265)
+
+[node name="SM_Chr_Attach_Bag_Lvl1" parent="Character_Attachments" instance=ExtResource("29_kkjl2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6912766, 24.917168, 25.426125)
+
+[node name="SM_Chr_Attach_Bag_Lvl2" parent="Character_Attachments" instance=ExtResource("30_vbad4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6912766, 24.917168, 21.709373)
+
+[node name="SM_Chr_Attach_Bag_Lvl3" parent="Character_Attachments" instance=ExtResource("31_n4ir7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4823456, 24.917168, 6.824955)
+
+[node name="SM_Chr_Attach_Beard_02" parent="Character_Attachments" instance=ExtResource("32_70828")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.65596, 24.917168, 25.181793)
+
+[node name="SM_Chr_Attach_Beard_03" parent="Character_Attachments" instance=ExtResource("33_pr2ui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.482338, 24.917168, 28.872719)
+
+[node name="SM_Chr_Attach_Beard_04" parent="Character_Attachments" instance=ExtResource("34_4hbe8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.688423, 24.917168, 28.889526)
+
+[node name="SM_Chr_Attach_Beard_05" parent="Character_Attachments" instance=ExtResource("35_80me8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7578049, 24.917168, 28.891718)
+
+[node name="SM_Chr_Attach_Beard_06" parent="Character_Attachments" instance=ExtResource("36_bw8j3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7575684, 24.917168, 25.160122)
+
+[node name="SM_Chr_Attach_Beard_07" parent="Character_Attachments" instance=ExtResource("37_ninnt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.41581, 24.917168, 36.299644)
+
+[node name="SM_Chr_Attach_Bedroll_01" parent="Character_Attachments" instance=ExtResource("38_kpf0o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3805, 24.917168, 2.9237099)
+
+[node name="SM_Chr_Attach_Bedroll_02" parent="Character_Attachments" instance=ExtResource("39_5e4ta")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.41581, 24.917168, 6.631954)
+
+[node name="SM_Chr_Attach_Earmuffs_01" parent="Character_Attachments" instance=ExtResource("40_ggpwr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4823456, 24.917168, 14.030729)
+
+[node name="SM_Chr_Attach_Eyepatch_01" parent="Character_Attachments" instance=ExtResource("41_mx80t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9660034, 24.917168, 28.89138)
+
+[node name="SM_Chr_Attach_Facemask_01" parent="Character_Attachments" instance=ExtResource("42_xkjal")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.931419, 24.917168, 21.512691)
+
+[node name="SM_Chr_Attach_Facemask_02" parent="Character_Attachments" instance=ExtResource("43_6uwsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.206886, 24.917168, 21.517044)
+
+[node name="SM_Chr_Attach_Facemask_03" parent="Character_Attachments" instance=ExtResource("44_0ha6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4823456, 24.917168, 21.512691)
+
+[node name="SM_Chr_Attach_Female_01" parent="Character_Attachments" instance=ExtResource("45_ttryb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.930054, 24.917168, 25.25756)
+
+[node name="SM_Chr_Attach_Female_02" parent="Character_Attachments" instance=ExtResource("46_15b86")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.660233, 24.917168, 10.365643)
+
+[node name="SM_Chr_Attach_Female_Armor_01" parent="Character_Attachments" instance=ExtResource("47_8s4vs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7578049, 24.917168, 10.362965)
+
+[node name="SM_Chr_Attach_Female_Armor_02" parent="Character_Attachments" instance=ExtResource("48_sbn3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.41581, 24.917168, 10.362057)
+
+[node name="SM_Chr_Attach_Female_Armor_03" parent="Character_Attachments" instance=ExtResource("49_gmd0w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96673584, 24.917168, 2.9086761)
+
+[node name="SM_Chr_Attach_Female_Default_Hair_01" parent="Character_Attachments" instance=ExtResource("50_sv3ql")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.205978, 24.917168, 25.255213)
+
+[node name="SM_Chr_Attach_Female_Hair_01" parent="Character_Attachments" instance=ExtResource("51_o0fi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4823456, 24.917168, 25.333735)
+
+[node name="SM_Chr_Attach_Female_Hair_Pigtails_01" parent="Character_Attachments" instance=ExtResource("52_dfw1t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4837723, 24.917168, 2.907978)
+
+[node name="SM_Chr_Attach_GasMask_01" parent="Character_Attachments" instance=ExtResource("53_l7ijl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.436752, 24.917168, 17.743553)
+
+[node name="SM_Chr_Attach_Glasses_01" parent="Character_Attachments" instance=ExtResource("54_m1crl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.41581, 24.917168, 28.920925)
+
+[node name="SM_Chr_Attach_Hat_Bandana_01" parent="Character_Attachments" instance=ExtResource("55_t5akm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7827225, 24.917168, 17.83295)
+
+[node name="SM_Chr_Attach_Hat_Beanie_01" parent="Character_Attachments" instance=ExtResource("56_3pi2l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.931427, 24.917168, 17.810747)
+
+[node name="SM_Chr_Attach_Hat_Beer_01" parent="Character_Attachments" instance=ExtResource("57_ijaat")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7578049, 24.917168, 6.5673103)
+
+[node name="SM_Chr_Attach_Hat_Bunny_01" parent="Character_Attachments" instance=ExtResource("58_jvt8t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7211533, 24.917168, 14.013031)
+
+[node name="SM_Chr_Attach_Hat_Cap_01" parent="Character_Attachments" instance=ExtResource("59_1bh6j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96673584, 24.917168, 25.190006)
+
+[node name="SM_Chr_Attach_Hat_Captian_01" parent="Character_Attachments" instance=ExtResource("60_6ewj8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.415817, 24.917168, 14.077314)
+
+[node name="SM_Chr_Attach_Hat_Cowboy_01" parent="Character_Attachments" instance=ExtResource("61_xj6f1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6912766, 24.917168, 6.605545)
+
+[node name="SM_Chr_Attach_Hat_Crown_01" parent="Character_Attachments" instance=ExtResource("62_6hgno")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.206955, 24.917168, 10.379185)
+
+[node name="SM_Chr_Attach_Hat_Cupcake_01" parent="Character_Attachments" instance=ExtResource("63_c8bkg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3805, 24.917168, 6.6616325)
+
+[node name="SM_Chr_Attach_Hat_Elf_01" parent="Character_Attachments" instance=ExtResource("64_282ml")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9343109, 24.917168, 10.379673)
+
+[node name="SM_Chr_Attach_Hat_Fez_01" parent="Character_Attachments" instance=ExtResource("65_p0bpw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.963043, 24.917168, 28.976109)
+
+[node name="SM_Chr_Attach_Hat_FlatTop_01" parent="Character_Attachments" instance=ExtResource("66_k0qx4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6901627, 24.917168, 10.363159)
+
+[node name="SM_Chr_Attach_Hat_Football_01" parent="Character_Attachments" instance=ExtResource("67_apo8h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.206886, 24.917168, 17.780523)
+
+[node name="SM_Chr_Attach_Hat_IceCream_01" parent="Character_Attachments" instance=ExtResource("68_xepp1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9413376, 24.917168, 17.809225)
+
+[node name="SM_Chr_Attach_Hat_Irish_01" parent="Character_Attachments" instance=ExtResource("69_xxvge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.656494, 24.917168, 6.631077)
+
+[node name="SM_Chr_Attach_Hat_Knight_01" parent="Character_Attachments" instance=ExtResource("70_aqyxu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7578049, 24.917168, 21.594723)
+
+[node name="SM_Chr_Attach_Hat_Mexican_01" parent="Character_Attachments" instance=ExtResource("71_j73jw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.691269, 24.917168, 2.9073296)
+
+[node name="SM_Chr_Attach_Hat_Mil_01" parent="Character_Attachments" instance=ExtResource("72_rsaao")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.65596, 24.917168, 21.491241)
+
+[node name="SM_Chr_Attach_Hat_Party_01" parent="Character_Attachments" instance=ExtResource("73_tx1d7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6494675, 24.917168, 32.714516)
+
+[node name="SM_Chr_Attach_Hat_Pot_01" parent="Character_Attachments" instance=ExtResource("74_jlma6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.573158, 24.917168, 2.9628983)
+
+[node name="SM_Chr_Attach_Hat_Racoon_01" parent="Character_Attachments" instance=ExtResource("75_r0yvl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.470581, 24.917168, 10.36549)
+
+[node name="SM_Chr_Attach_Hat_Roadcone_01" parent="Character_Attachments" instance=ExtResource("76_eavcb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9340515, 24.917168, 2.9197922)
+
+[node name="SM_Chr_Attach_Hat_Roman_01" parent="Character_Attachments" instance=ExtResource("77_d1mey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96673584, 24.917168, 14.112917)
+
+[node name="SM_Chr_Attach_Hat_Samurai_01" parent="Character_Attachments" instance=ExtResource("78_bpo1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.206886, 24.917168, 2.9185867)
+
+[node name="SM_Chr_Attach_Hat_Shark_01" parent="Character_Attachments" instance=ExtResource("79_l03wv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3805, 24.917168, 10.427074)
+
+[node name="SM_Chr_Attach_Hat_Squid_01" parent="Character_Attachments" instance=ExtResource("80_mcolw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3805, 24.917168, 14.09078)
+
+[node name="SM_Chr_Attach_Hat_Tacticle_01" parent="Character_Attachments" instance=ExtResource("81_b0myn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7578049, 24.917168, 14.088438)
+
+[node name="SM_Chr_Attach_Hat_Turban_01" parent="Character_Attachments" instance=ExtResource("82_1f50a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.931419, 24.917168, 10.369564)
+
+[node name="SM_Chr_Attach_Hat_Unicorn_01" parent="Character_Attachments" instance=ExtResource("83_gjf06")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6912766, 24.917168, 17.813862)
+
+[node name="SM_Chr_Attach_Helmet_01" parent="Character_Attachments" instance=ExtResource("84_67iws")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.65596, 24.917168, 14.064098)
+
+[node name="SM_Chr_Attach_Helmet_02" parent="Character_Attachments" instance=ExtResource("85_46njc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.655952, 24.917168, 17.801332)
+
+[node name="SM_Chr_Attach_Helmet_03" parent="Character_Attachments" instance=ExtResource("86_6ulhd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.41581, 24.917168, 25.131598)
+
+[node name="SM_Chr_Attach_Male_Armor_01" parent="Character_Attachments" instance=ExtResource("87_1pimf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.931419, 24.917168, 6.6553917)
+
+[node name="SM_Chr_Attach_Male_Armor_02" parent="Character_Attachments" instance=ExtResource("88_7wx7g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.206879, 24.917168, 6.64822)
+
+[node name="SM_Chr_Attach_Male_Armor_03" parent="Character_Attachments" instance=ExtResource("89_dtaja")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7578049, 24.917168, 2.9133148)
+
+[node name="SM_Chr_Attach_Male_Default_Hair_01" parent="Character_Attachments" instance=ExtResource("90_syot3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3805, 24.917168, 25.256386)
+
+[node name="SM_Chr_Attach_Male_Hair_01" parent="Character_Attachments" instance=ExtResource("91_vair0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.424446, 24.917168, 21.534603)
+
+[node name="SM_Chr_Attach_Male_Hair_02" parent="Character_Attachments" instance=ExtResource("92_fjbjh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.383553, 24.917168, 21.521027)
+
+[node name="SM_Chr_Attach_Male_Hair_03" parent="Character_Attachments" instance=ExtResource("93_lj3do")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96788025, 24.917168, 21.552864)
+
+[node name="SM_Chr_Attach_Male_Hair_04" parent="Character_Attachments" instance=ExtResource("94_xeao3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9621506, 24.917168, 6.6895485)
+
+[node name="SM_Chr_Attach_Male_Hair_05" parent="Character_Attachments" instance=ExtResource("95_f0dfo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.206886, 24.917168, 29.063026)
+
+[node name="SM_Chr_Attach_Male_Hair_06" parent="Character_Attachments" instance=ExtResource("96_p84yp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4709167, 24.917168, 17.77976)
+
+[node name="SM_Chr_Attach_Male_Hair_07" parent="Character_Attachments" instance=ExtResource("97_hspbi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96482086, 24.917168, 36.443535)
+
+[node name="SM_Chr_Attach_Pouch_01" parent="Character_Attachments" instance=ExtResource("98_u2k17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.931419, 24.917168, 36.428265)
+
+[node name="SM_Chr_Attach_Pouch_02" parent="Character_Attachments" instance=ExtResource("99_7t3mw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3805, 24.917168, 28.982162)
+
+[node name="SM_Chr_Attach_Pouch_03" parent="Character_Attachments" instance=ExtResource("100_nwx38")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.41581, 24.917168, 32.706703)
+
+[node name="SM_Chr_Attach_Pouch_04" parent="Character_Attachments" instance=ExtResource("101_7rg1l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.380608, 24.917168, 36.431225)
+
+[node name="SM_Chr_Attach_Pouch_05" parent="Character_Attachments" instance=ExtResource("102_a4p1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.206886, 24.917168, 36.428265)
+
+[node name="SM_Chr_Attach_Pouch_06" parent="Character_Attachments" instance=ExtResource("103_3mvts")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4823456, 24.917168, 36.420387)
+
+[node name="SM_Chr_Attach_Pouch_07" parent="Character_Attachments" instance=ExtResource("104_7unlo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3805, 24.917168, 17.783825)
+
+[node name="SM_Chr_Attach_Pouch_08" parent="Character_Attachments" instance=ExtResource("105_m3pko")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7578049, 24.917168, 36.428265)
+
+[node name="SM_Chr_Attach_Scarf_01" parent="Character_Attachments" instance=ExtResource("106_pw47x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.92733, 24.917168, 14.091532)
+
+[node name="SM_Chr_Attach_Scarf_02" parent="Character_Attachments" instance=ExtResource("107_l0qvb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.202789, 24.917168, 14.094727)
+
+[node name="SM_Chr_Patch_Flag_01" parent="Character_Attachments" instance=ExtResource("108_qhuxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.65596, 24.917168, 28.979187)
+
+[node name="SM_Chr_Patch_Leaf_01" parent="Character_Attachments" instance=ExtResource("109_hrwpc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6912766, 24.917168, 36.428265)
+
+[node name="SM_Chr_Patch_Medic_01" parent="Character_Attachments" instance=ExtResource("110_va0fe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.65596, 24.917168, 32.703728)
+
+[node name="SM_Chr_Patch_Medic_02" parent="Character_Attachments" instance=ExtResource("111_na5t5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3805, 24.917168, 32.703728)
+
+[node name="SM_Chr_Patch_Rank_01" parent="Character_Attachments" instance=ExtResource("112_yv1wh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4823456, 24.917168, 32.703728)
+
+[node name="SM_Chr_Patch_Rank_02" parent="Character_Attachments" instance=ExtResource("113_jih4h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7578049, 24.917168, 32.703728)
+
+[node name="SM_Chr_Patch_Rank_03" parent="Character_Attachments" instance=ExtResource("114_yguoe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96673584, 24.917168, 32.703728)
+
+[node name="SM_Chr_Patch_Star_01" parent="Character_Attachments" instance=ExtResource("115_i03wh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.931419, 24.917168, 32.703728)
+
+[node name="SM_Chr_Patch_Star_02" parent="Character_Attachments" instance=ExtResource("116_2thrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.206886, 24.917168, 32.703728)
+
+[node name="Character_PickUps" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, 3.3569467, -8)
+
+[node name="SM_PickUp_Armor_01" parent="Character_PickUps" instance=ExtResource("117_ikpqa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46840668, -3.3569467, -2.6401587)
+
+[node name="SM_PickUp_Armor_02" parent="Character_PickUps" instance=ExtResource("118_gooia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.195038, -3.3569467, -2.6198077)
+
+[node name="SM_PickUp_Armor_03" parent="Character_PickUps" instance=ExtResource("119_f4jof")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.521935, -3.3569467, -2.645873)
+
+[node name="SM_PickUp_Bag_01" parent="Character_PickUps" instance=ExtResource("120_426jg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.795296, -3.3569467, -2.6398268)
+
+[node name="SM_PickUp_Bag_02" parent="Character_PickUps" instance=ExtResource("121_qs1s7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.131851, -3.3569467, -2.6398268)
+
+[node name="SM_PickUp_Bag_03" parent="Character_PickUps" instance=ExtResource("122_og655")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.858482, -3.3569467, -2.6398268)
+
+[node name="Environments" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -249, -95.55348, -35)
+
+[node name="SM_Env_Beach_01" parent="Environments" instance=ExtResource("123_wrgrk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.10956, 95.55348, -108.72232)
+
+[node name="SM_Env_Beach_Staight_01" parent="Environments" instance=ExtResource("124_nksma")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.109558, 95.55348, -114.72232)
+
+[node name="SM_Env_Beach_Staight_02" parent="Environments" instance=ExtResource("125_x3iqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.109558, 95.55348, -155.72232)
+
+[node name="SM_Env_Bridge_01" parent="Environments" instance=ExtResource("126_l0cub")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.72799, 95.55348, -40.21576)
+
+[node name="SM_Env_Bridge_02" parent="Environments" instance=ExtResource("127_jmi4e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.890442, 95.55348, -40.216522)
+
+[node name="SM_Env_Bridge_Broken_01" parent="Environments" instance=ExtResource("128_kl042")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.109558, 95.55348, -39.702896)
+
+[node name="SM_Env_Bridge_Support_01" parent="Environments" instance=ExtResource("129_j0af4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.109558, 95.55348, -37.71575)
+
+[node name="SM_Env_Concrete_Base_01" parent="Environments" instance=ExtResource("130_3s6w3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.51381, 95.55348, 6.28096)
+
+[node name="SM_Env_DirtRoad_End_01" parent="Environments" instance=ExtResource("131_vdfh4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.890442, 95.55348, -138.1809)
+
+[node name="SM_Env_DirtRoad_Straight_01" parent="Environments" instance=ExtResource("132_7rp6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.022, 95.55348, -130.72232)
+
+[node name="SM_Env_Dock_01" parent="Environments" instance=ExtResource("133_m3ovl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2255173, 95.55348, 3.8377495)
+
+[node name="SM_Env_Dock_Poles_01" parent="Environments" instance=ExtResource("134_hjnxy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.259163, 95.55348, 3.78096)
+
+[node name="SM_Env_Grass_Circle_01" parent="Environments" instance=ExtResource("135_we256")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.89044, 95.55348, -104.72232)
+
+[node name="SM_Env_Grass_Circle_02" parent="Environments" instance=ExtResource("136_xn6c6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.23127, 95.55348, -16.9674)
+
+[node name="SM_Env_Grass_Square_01" parent="Environments" instance=ExtResource("137_hkmqc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.10956, 95.55348, -74.72232)
+
+[node name="SM_Env_Port_Boat_Tie_01" parent="Environments" instance=ExtResource("138_72aal")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.51709, 95.55348, 33.27768)
+
+[node name="SM_Env_Port_Concrete_Slab_01" parent="Environments" instance=ExtResource("139_14xcp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.72799, 95.55348, 20.52932)
+
+[node name="SM_Env_Port_Wall_01" parent="Environments" instance=ExtResource("140_8lm13")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.97963, 95.55348, 19.50587)
+
+[node name="SM_Env_Port_Wall_02" parent="Environments" instance=ExtResource("141_e6jfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2312698, 95.55348, 19.50587)
+
+[node name="SM_Env_Port_Wall_Corner_01" parent="Environments" instance=ExtResource("142_ccaf1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.97963, 95.55348, 33.27768)
+
+[node name="SM_Env_Road_Corner_01" parent="Environments" instance=ExtResource("143_e7b7p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.109558, 95.55348, -84.72232)
+
+[node name="SM_Env_Road_Corner_02" parent="Environments" instance=ExtResource("144_62bbd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.61866, 95.55348, -22.362549)
+
+[node name="SM_Env_Road_Cross_01" parent="Environments" instance=ExtResource("145_u1oo7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.51709, 95.55348, -21.9674)
+
+[node name="SM_Env_Road_Straight_01" parent="Environments" instance=ExtResource("146_rfsc7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.109558, 95.55348, -55.72232)
+
+[node name="SM_Env_Road_Straight_02" parent="Environments" instance=ExtResource("147_56v2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.10956, 95.55348, -55.72232)
+
+[node name="SM_Env_Road_Straight_03" parent="Environments" instance=ExtResource("148_j5gd2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.89044, 95.55348, -78.72232)
+
+[node name="SM_Env_Road_Straight_Damaged_01" parent="Environments" instance=ExtResource("149_lbnex")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.10956, 95.55348, -40.21576)
+
+[node name="SM_Env_Road_Straight_Damaged_02" parent="Environments" instance=ExtResource("150_7y25k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.89044, 95.55348, -55.72232)
+
+[node name="SM_Env_Road_Straight_Damaged_03" parent="Environments" instance=ExtResource("151_tje6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.890442, 95.55348, -55.72232)
+
+[node name="SM_Env_Road_Straight_End_01" parent="Environments" instance=ExtResource("152_r18nh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.890442, 95.55348, -80.72232)
+
+[node name="SM_Env_Road_T_01" parent="Environments" instance=ExtResource("153_roqc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.26545, 95.55348, -22.362556)
+
+[node name="SM_Env_Rock_01" parent="Environments" instance=ExtResource("154_bs5x0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.973328, 95.55348, 3.9820557)
+
+[node name="SM_Env_Rock_02" parent="Environments" instance=ExtResource("155_gekwo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.666832, 95.55348, -16.907948)
+
+[node name="SM_Env_Rubble_Pebbles_01" parent="Environments" instance=ExtResource("156_cig1a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.288445, 95.55348, 33.2388)
+
+[node name="SM_Env_Rubble_Pebbles_02" parent="Environments" instance=ExtResource("157_6j0w7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.61847, 95.55348, 33.578545)
+
+[node name="SM_Env_Rubble_Pebbles_03" parent="Environments" instance=ExtResource("158_xuqwd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.26545, 95.55348, 19.52932)
+
+[node name="SM_Env_Rubble_Pile_01" parent="Environments" instance=ExtResource("159_8j6c4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.979633, 95.55348, -16.9674)
+
+[node name="SM_Env_Rubble_Pile_02" parent="Environments" instance=ExtResource("160_hxthx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.51709, 95.55348, 3.78096)
+
+[node name="SM_Env_Rubble_Plank_01" parent="Environments" instance=ExtResource("161_iq25c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.97963, 95.55348, 3.78096)
+
+[node name="SM_Env_Rubble_Plank_02" parent="Environments" instance=ExtResource("162_wgpch")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.51709, 95.55348, 19.52932)
+
+[node name="SM_Env_Rubble_Plank_03" parent="Environments" instance=ExtResource("163_ykdig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.01381, 95.55348, 19.52932)
+
+[node name="SM_Env_Rubble_Stone_01" parent="Environments" instance=ExtResource("164_xo6s8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.23127, 95.55348, 33.27768)
+
+[node name="SM_Env_Rubble_Stone_02" parent="Environments" instance=ExtResource("165_17i7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.72799, 95.55348, 33.27768)
+
+[node name="Generic" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -366, -82.8672, -106.200836)
+
+[node name="SM_Env_Bush_01" parent="Generic" instance=ExtResource("166_d45qj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.803112, 82.8672, 67.49481)
+
+[node name="SM_Env_Bush_02" parent="Generic" instance=ExtResource("167_eqcl0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.85859, 82.8672, 105.200836)
+
+[node name="SM_Env_Bush_03" parent="Generic" instance=ExtResource("168_e4du2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9709053, 82.8672, 86.28609)
+
+[node name="SM_Env_Bush_04" parent="Generic" instance=ExtResource("169_grhc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.75848, 82.8672, 86.26571)
+
+[node name="SM_Generic_Cloud_01" parent="Generic" instance=ExtResource("170_yb266")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.881382, 82.8672, 48.847492)
+
+[node name="SM_Generic_Cloud_02" parent="Generic" instance=ExtResource("171_lhs37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2842064, 82.8672, 30.06054)
+
+[node name="SM_Generic_Cloud_03" parent="Generic" instance=ExtResource("172_67pss")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.715794, 82.8672, 30.645302)
+
+[node name="SM_Generic_Cloud_04" parent="Generic" instance=ExtResource("173_35awh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9457245, 82.8672, 49.2042)
+
+[node name="SM_Generic_Grass_Patch_01" parent="Generic" instance=ExtResource("174_veklw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9709015, 82.8672, 48.4566)
+
+[node name="SM_Generic_Grass_Patch_02" parent="Generic" instance=ExtResource("175_0dx7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.943844, 82.8672, 105.200836)
+
+[node name="SM_Generic_Mountains_Grass_01" parent="Generic" instance=ExtResource("176_tpt2o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.715794, 82.8672, 8.200836)
+
+[node name="SM_Generic_Mountains_Grass_02" parent="Generic" instance=ExtResource("177_g1r15")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.284206, 82.8672, 29.541855)
+
+[node name="SM_Generic_Mountains_Snow_01" parent="Generic" instance=ExtResource("178_x4nko")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.284206, 82.8672, 7.200836)
+
+[node name="SM_Generic_Mountains_Soft_01" parent="Generic" instance=ExtResource("179_hghl0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2842064, 82.8672, -19.799164)
+
+[node name="SM_Generic_Small_Rocks_01" parent="Generic" instance=ExtResource("180_01cvs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.715794, 82.8672, 86.28433)
+
+[node name="SM_Generic_Small_Rocks_02" parent="Generic" instance=ExtResource("181_rvy3c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.885647, 82.8672, 105.200836)
+
+[node name="SM_Generic_Tree_01" parent="Generic" instance=ExtResource("182_ut8il")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.8843155, 82.8672, 67.323044)
+
+[node name="SM_Generic_Tree_02" parent="Generic" instance=ExtResource("183_8vla4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.943844, 82.8672, 86.28609)
+
+[node name="SM_Generic_Tree_03" parent="Generic" instance=ExtResource("184_803m5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9709053, 82.8672, 67.371346)
+
+[node name="SM_Generic_Tree_04" parent="Generic" instance=ExtResource("185_xgotn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.14705, 82.8672, 67.371346)
+
+[node name="SM_Generic_TreeDead_01" parent="Generic" instance=ExtResource("186_drs7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.431873, 82.8672, 48.24091)
+
+[node name="SM_Generic_TreeStump_01" parent="Generic" instance=ExtResource("187_ns7fp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9708977, 82.8672, 105.200836)
+
+[node name="Props" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -5.865616, -61)
+
+[node name="SM_Prop_AmmoBox_01" parent="Props" instance=ExtResource("188_3qls7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.867401, 5.865616, 42.50411)
+
+[node name="SM_Prop_Bandage_01" parent="Props" instance=ExtResource("189_lhbdb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6951685, 5.865616, 58.786377)
+
+[node name="SM_Prop_Bandage_02" parent="Props" instance=ExtResource("190_am8k8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.132599, 5.865616, 53.786377)
+
+[node name="SM_Prop_Barrel_01" parent="Props" instance=ExtResource("191_40hkp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.08975, 5.865616, 42.50411)
+
+[node name="SM_Prop_Barrel_02" parent="Props" instance=ExtResource("192_xfmsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.867401, 5.865616, 36.36347)
+
+[node name="SM_Prop_Barricade_01" parent="Props" instance=ExtResource("193_3re5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.964611, 5.865616, 15.786377)
+
+[node name="SM_Prop_Barrier_01" parent="Props" instance=ExtResource("194_fsq0b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.835811, 5.865616, 29.786377)
+
+[node name="SM_Prop_Barrier_02" parent="Props" instance=ExtResource("195_3kko2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6951685, 5.865616, 29.786377)
+
+[node name="SM_Prop_Barrier_03" parent="Props" instance=ExtResource("196_gtb25")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.132599, 5.865616, 29.786377)
+
+[node name="SM_Prop_Barrier_04" parent="Props" instance=ExtResource("197_i4pjb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.132599, 5.865616, 0.78637695)
+
+[node name="SM_Prop_Barrier_Dirt_01" parent="Props" instance=ExtResource("198_wtale")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.132599, 5.865616, 0.78637695)
+
+[node name="SM_Prop_BaseWall_01" parent="Props" instance=ExtResource("199_1ujvu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.132599, 5.865616, 8.875488)
+
+[node name="SM_Prop_BaseWall_Broken_01" parent="Props" instance=ExtResource("200_dmb80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.867401, 5.865616, 8.937412)
+
+[node name="SM_Prop_BaseWall_Broken_02" parent="Props" instance=ExtResource("201_sdibu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8674011, 5.865616, 8.875488)
+
+[node name="SM_Prop_BaseWall_Post_01" parent="Props" instance=ExtResource("202_8stan")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.726758, 5.865616, 36.36347)
+
+[node name="SM_Prop_Benchpress_01" parent="Props" instance=ExtResource("203_s4wh7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.867401, 5.865616, 8.781191)
+
+[node name="SM_Prop_BriefcaseBomb_01" parent="Props" instance=ExtResource("204_eyulw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6951685, 5.865616, 42.539257)
+
+[node name="SM_Prop_BunkBed_01" parent="Props" instance=ExtResource("205_nbecm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5861063, 5.865616, 21.786377)
+
+[node name="SM_Prop_C4_01" parent="Props" instance=ExtResource("206_nitb6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.867401, 5.865616, 48.644753)
+
+[node name="SM_Prop_C4_02" parent="Props" instance=ExtResource("207_4g2bc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.867401, 5.865616, 48.644753)
+
+[node name="SM_Prop_CardboardBox_01" parent="Props" instance=ExtResource("208_3bna1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.586116, 5.865616, 42.504112)
+
+[node name="SM_Prop_Cinderblock_01" parent="Props" instance=ExtResource("209_hnseg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.867401, 5.865616, 42.50411)
+
+[node name="SM_Prop_Cinderblock_Wall_01" parent="Props" instance=ExtResource("210_4ql2x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.867401, 5.865616, 8.786377)
+
+[node name="SM_Prop_Container_01" parent="Props" instance=ExtResource("211_bf32r")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 15.867401, 5.865616, -8.213623)
+
+[node name="SM_Prop_Container_Small_01" parent="Props" instance=ExtResource("212_pohup")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.867401, 5.865616, -8.213623)
+
+[node name="SM_Prop_Crate_01" parent="Props" instance=ExtResource("213_bhwsy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.867401, 5.865616, 21.786377)
+
+[node name="SM_Prop_Crate_Large_01" parent="Props" instance=ExtResource("214_gxf2a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6951685, 5.865616, 36.36347)
+
+[node name="SM_Prop_Crate_Medical_01" parent="Props" instance=ExtResource("215_luaq8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.586116, 5.865616, 36.36347)
+
+[node name="SM_Prop_Crate_Small_01" parent="Props" instance=ExtResource("216_hlsnr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.835811, 5.865616, 36.36347)
+
+[node name="SM_Prop_EmergencyDrop_01" parent="Props" instance=ExtResource("217_qmw7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8674011, 5.865616, -8.213623)
+
+[node name="SM_Prop_EmergencyDrop_Crate_01" parent="Props" instance=ExtResource("218_vuthf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.723202, 5.865616, 21.786377)
+
+[node name="SM_Prop_Gauze_01" parent="Props" instance=ExtResource("219_tn16q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.091148, 5.865616, 48.621933)
+
+[node name="SM_Prop_Generator_01" parent="Props" instance=ExtResource("220_tydgs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.132599, 5.865616, 42.50411)
+
+[node name="SM_Prop_GuardTower_01" parent="Props" instance=ExtResource("221_xrwr5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.08975, 5.865616, -8.213623)
+
+[node name="SM_Prop_HeadBase_Black" parent="Props" instance=ExtResource("222_x0tlk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.726758, 5.865616, 48.644753)
+
+[node name="SM_Prop_HeadBase_Grey" parent="Props" instance=ExtResource("223_jjh7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.586116, 5.865616, 48.644753)
+
+[node name="SM_Prop_HeadBase_Skin" parent="Props" instance=ExtResource("224_dr8cf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5545263, 5.865616, 48.644753)
+
+[node name="SM_Prop_HeadBase_White" parent="Props" instance=ExtResource("225_66jwh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6951685, 5.865616, 48.644753)
+
+[node name="SM_Prop_Iron_Sheet_01" parent="Props" instance=ExtResource("226_2lv47")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.735599, 5.865616, 29.786377)
+
+[node name="SM_Prop_Iron_Sheet_02" parent="Props" instance=ExtResource("227_j1syn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5903625, 5.865616, 29.820364)
+
+[node name="SM_Prop_Iron_Sheet_03" parent="Props" instance=ExtResource("228_jxidd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5211611, 5.865616, 29.756428)
+
+[node name="SM_Prop_Key_01" parent="Props" instance=ExtResource("229_lqhkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.726758, 5.865616, 58.796387)
+
+[node name="SM_Prop_Key_02" parent="Props" instance=ExtResource("230_1lau4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.867401, 5.865616, 58.796387)
+
+[node name="SM_Prop_Key_03" parent="Props" instance=ExtResource("231_0p1vw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.867401, 5.865616, 58.796387)
+
+[node name="SM_Prop_MedicalBox_01" parent="Props" instance=ExtResource("232_0q068")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.726758, 5.865616, 42.50411)
+
+[node name="SM_Prop_MedicalBox_02" parent="Props" instance=ExtResource("233_15pts")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.835811, 5.865616, 48.644753)
+
+[node name="SM_Prop_MissileStack_01" parent="Props" instance=ExtResource("234_l3cf6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.132599, 5.865616, 36.36347)
+
+[node name="SM_Prop_Needle_01" parent="Props" instance=ExtResource("235_r6ymk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.586116, 5.865616, 53.785393)
+
+[node name="SM_Prop_Padlock_01" parent="Props" instance=ExtResource("236_uj3py")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.586116, 5.865616, 58.796387)
+
+[node name="SM_Prop_Padlock_02" parent="Props" instance=ExtResource("237_ifhb7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5545263, 5.865616, 58.796387)
+
+[node name="SM_Prop_Pallet_01" parent="Props" instance=ExtResource("238_eolgq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.132599, 5.865616, 21.786377)
+
+[node name="SM_Prop_Pallet_Loaded_01" parent="Props" instance=ExtResource("239_l7m00")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.835811, 5.865616, 21.786377)
+
+[node name="SM_Prop_Pallet_Loaded_02" parent="Props" instance=ExtResource("240_584ap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5545263, 5.865616, 21.786377)
+
+[node name="SM_Prop_PalletStack_01" parent="Props" instance=ExtResource("241_0yvol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.132599, 5.865616, 8.875488)
+
+[node name="SM_Prop_Parachute_01" parent="Props" instance=ExtResource("242_06lst")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.132599, 5.865616, -8.213623)
+
+[node name="SM_Prop_Pills_01" parent="Props" instance=ExtResource("243_h5do3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.835811, 5.865616, 58.796387)
+
+[node name="SM_Prop_Pills_02" parent="Props" instance=ExtResource("244_j5hr5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.08975, 5.865616, 58.796387)
+
+[node name="SM_Prop_Portaloo_01" parent="Props" instance=ExtResource("245_po0kq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.132599, 5.865616, 15.781191)
+
+[node name="SM_Prop_Propane_01" parent="Props" instance=ExtResource("246_voqek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.132586, 5.865616, 48.644737)
+
+[node name="SM_Prop_Propane_Tall_01" parent="Props" instance=ExtResource("247_b0t46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.835811, 5.865616, 53.785393)
+
+[node name="SM_Prop_RadioTower_01" parent="Props" instance=ExtResource("248_fckic")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.132599, 5.865616, -8.213623)
+
+[node name="SM_Prop_Range_Trable_01" parent="Props" instance=ExtResource("249_88esc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.867401, 5.865616, 0.78637695)
+
+[node name="SM_Prop_Range_Wall_01" parent="Props" instance=ExtResource("250_a2x8t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.132599, 5.865616, 21.786377)
+
+[node name="SM_Prop_Range_Wall_02" parent="Props" instance=ExtResource("251_a0rt5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.08975, 5.865616, 21.786377)
+
+[node name="SM_Prop_Range_Wall_03" parent="Props" instance=ExtResource("252_pityp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.867401, 5.865616, 15.781191)
+
+[node name="SM_Prop_Range_Wall_Door_01" parent="Props" instance=ExtResource("253_stu4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.726758, 5.865616, 15.781191)
+
+[node name="SM_Prop_Range_Wall_Half_01" parent="Props" instance=ExtResource("254_bc7pk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.867401, 5.865616, 15.781191)
+
+[node name="SM_Prop_Range_Wall_Post_01" parent="Props" instance=ExtResource("255_fa6co")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.132599, 5.865616, 53.785393)
+
+[node name="SM_Prop_Range_Wall_Window_01" parent="Props" instance=ExtResource("256_vxmgh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.586116, 5.865616, 15.781191)
+
+[node name="SM_Prop_Rubbish_Bottle_01" parent="Props" instance=ExtResource("257_k23xt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.687315, 5.865616, 53.76487)
+
+[node name="SM_Prop_Rubbish_Can_01" parent="Props" instance=ExtResource("258_tbqfy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.131775, 5.865616, 58.796963)
+
+[node name="SM_Prop_Rubbish_Can_02" parent="Props" instance=ExtResource("259_ps55y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5484562, 5.865616, 53.771633)
+
+[node name="SM_Prop_Rubbish_Paper_01" parent="Props" instance=ExtResource("260_areyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.867401, 5.865616, 53.785393)
+
+[node name="SM_Prop_Rubbish_Paper_02" parent="Props" instance=ExtResource("261_0f5yh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.867401, 5.865616, 53.785393)
+
+[node name="SM_Prop_Rubbish_Paper_03" parent="Props" instance=ExtResource("262_j0dw5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.756193, 5.865616, 53.760715)
+
+[node name="SM_Prop_Rubbish_Papers_01" parent="Props" instance=ExtResource("263_tp688")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.008043, 5.865616, 21.786377)
+
+[node name="SM_Prop_Rubbish_Papers_02" parent="Props" instance=ExtResource("264_kcxf4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.867401, 5.865616, 29.786377)
+
+[node name="SM_Prop_Rubbish_Papers_03" parent="Props" instance=ExtResource("265_xjmqq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5545263, 5.865616, 42.50411)
+
+[node name="SM_Prop_Slatbox_01" parent="Props" instance=ExtResource("266_1bf18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.867401, 5.865616, 36.36347)
+
+[node name="SM_Prop_Spotlight_01" parent="Props" instance=ExtResource("267_wmsy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.08975, 5.865616, 36.416603)
+
+[node name="SM_Prop_TankTrap_01" parent="Props" instance=ExtResource("268_7s6dw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.8737, 5.865616, 15.745064)
+
+[node name="SM_Prop_Target_01" parent="Props" instance=ExtResource("269_lv0x1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.835811, 5.865616, 42.50411)
+
+[node name="SM_Prop_Tire_01" parent="Props" instance=ExtResource("270_w15cu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5545263, 5.865616, 36.36347)
+
+[node name="SM_Prop_TireStack_01" parent="Props" instance=ExtResource("271_dokqi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.691177, 5.865616, 29.786377)
+
+[node name="SM_Prop_Transformer_01" parent="Props" instance=ExtResource("272_y56qv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8674011, 5.865616, 0.78637695)
+
+[node name="SM_Prop_WeaponCase_01" parent="Props" instance=ExtResource("273_miwq8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.08975, 5.865616, 29.758072)
+
+[node name="SM_Prop_WireFence_01" parent="Props" instance=ExtResource("274_2auub")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.132599, 5.865616, 8.875488)
+
+[node name="SM_Prop_WireFence_02" parent="Props" instance=ExtResource("275_va0d1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.989286, 5.865616, 8.875488)
+
+[node name="SM_Prop_Wirespool_01" parent="Props" instance=ExtResource("276_kbxvv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5545263, 5.865616, 15.781191)
+
+[node name="SM_Prop_Wirespool_02" parent="Props" instance=ExtResource("277_u1qt4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.132599, 5.865616, 15.781191)
+
+[node name="SM_Prop_WoodPlank_01" parent="Props" instance=ExtResource("278_dcdfr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.867401, 5.865616, 0.78637695)
+
+[node name="Vehicles" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 125.72304, -34.19302, -47)
+
+[node name="SM_Veh_Armored_Car_01" parent="Vehicles" instance=ExtResource("279_t3d6e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.723038, 34.19302, 20.616524)
+
+[node name="SM_Veh_Armored_Car_Destroyed_01" parent="Vehicles" instance=ExtResource("280_bb07u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7230377, 34.19302, -29.319275)
+
+[node name="SM_Veh_Bike_01" parent="Vehicles" instance=ExtResource("281_yra3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6814575, 34.19302, 42.852615)
+
+[node name="SM_Veh_Bike_Destroyed_01" parent="Vehicles" instance=ExtResource("282_anac7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.757477, 34.19302, 42.52884)
+
+[node name="SM_Veh_Boat_01" parent="Vehicles" instance=ExtResource("283_bgdp7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.688133, 34.19302, -29.584412)
+
+[node name="SM_Veh_Boat_Destroyed_01" parent="Vehicles" instance=ExtResource("284_jsebp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.723038, 34.19302, -29.326477)
+
+[node name="SM_Veh_Buggy_01" parent="Vehicles" instance=ExtResource("285_x4cg0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.688133, 34.19302, 20.487679)
+
+[node name="SM_Veh_Buggy_Destroyed_01" parent="Vehicles" instance=ExtResource("286_g20ie")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.276962, 34.19302, -4.471161)
+
+[node name="SM_Veh_Car_01" parent="Vehicles" instance=ExtResource("287_lc7gc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.287354, 34.19302, 20.524078)
+
+[node name="SM_Veh_Car_Clean_01" parent="Vehicles" instance=ExtResource("288_ec7bj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.716805, 34.19302, 42.48918)
+
+[node name="SM_Veh_Car_Destroyed_01" parent="Vehicles" instance=ExtResource("289_767i1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6889038, 34.19302, 20.523857)
+
+[node name="SM_Veh_Car_Plate_01" parent="Vehicles" instance=ExtResource("290_6r2vi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.281113, 34.19302, 42.56977)
+
+[node name="SM_Veh_Light_Armored_Car_01" parent="Vehicles" instance=ExtResource("291_fc6hf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.688133, 34.19302, -4.3702545)
+
+[node name="SM_Veh_Light_Car_Destroyed_01" parent="Vehicles" instance=ExtResource("292_1h7vi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.68437195, 34.19302, -4.366333)
+
+[node name="SM_Veh_Plane_01" parent="Vehicles" instance=ExtResource("293_xf1u2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.723038, 34.19302, -98.47116)
+
+[node name="SM_Veh_Plane_Destroyed_01" parent="Vehicles" instance=ExtResource("294_si1k4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.276962, 34.19302, -94.47116)
+
+[node name="SM_Veh_Tank_Russia_01" parent="Vehicles" instance=ExtResource("295_arr32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.281113, 34.19302, -51.82904)
+
+[node name="SM_Veh_Tank_Russia_Destroyed_01" parent="Vehicles" instance=ExtResource("296_lqpga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6873779, 34.19302, -52.984825)
+
+[node name="SM_Veh_Tank_USA_01" parent="Vehicles" instance=ExtResource("297_chs5x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.688133, 34.19302, -52.39183)
+
+[node name="SM_Veh_Tank_USA_Destroyed_01" parent="Vehicles" instance=ExtResource("298_2jwov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.772614, 34.19302, -52.93009)
+
+[node name="SM_Veh_Truck_01" parent="Vehicles" instance=ExtResource("299_ljmp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.723038, 34.19302, -4.62294)
+
+[node name="SM_Veh_Truck_Destroyed_01" parent="Vehicles" instance=ExtResource("300_gncjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.275208, 34.19302, -29.368225)
+
+[node name="Weapons" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.9, 3.761053e-05, -62.6)
+
+[node name="SM_Wep_Ammo_BulletLarge_01" parent="Weapons" instance=ExtResource("301_y54hp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.436731, -3.761053e-05, -0.027300358)
+
+[node name="SM_Wep_Attachment_Grip_01" parent="Weapons" instance=ExtResource("302_r5ntv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.57866, -3.761053e-05, -4.01746)
+
+[node name="SM_Wep_Attachment_Redot_01" parent="Weapons" instance=ExtResource("303_6al5y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4316006, -3.761053e-05, -4.0150404)
+
+[node name="SM_Wep_Attachment_Silencer_01" parent="Weapons" instance=ExtResource("304_0kxuk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4264708, -3.761053e-05, -4.0463247)
+
+[node name="SM_Wep_Bat_01" parent="Weapons" instance=ExtResource("305_60t0w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6582699, -3.761053e-05, -17.086552)
+
+[node name="SM_Wep_Bullet_Ammo_01" parent="Weapons" instance=ExtResource("306_3ciox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4369278, -3.761053e-05, -0.024639606)
+
+[node name="SM_Wep_Bullet_Ammo_02" parent="Weapons" instance=ExtResource("307_tcfi5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.828732, -3.761053e-05, -0.02463913)
+
+[node name="SM_Wep_Bullet_Ammo_Box_01" parent="Weapons" instance=ExtResource("308_4xsun")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.389441, -3.761053e-05, -6.0153003)
+
+[node name="SM_Wep_Bullet_Ammo_Box_02" parent="Weapons" instance=ExtResource("309_ukoj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3421497, -3.761053e-05, -6.0153003)
+
+[node name="SM_Wep_Bullet_Ammo_Pile_01" parent="Weapons" instance=ExtResource("310_pysuj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.56355476, -3.761053e-05, -2.0153003)
+
+[node name="SM_Wep_Crosshair_01" parent="Weapons" instance=ExtResource("311_hylke")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4367237, -3.761053e-05, -0.015303612)
+
+[node name="SM_Wep_Crosshair_02" parent="Weapons" instance=ExtResource("312_xtmjn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2566309, -3.761053e-05, -0.015306473)
+
+[node name="SM_Wep_Crosshair_03" parent="Weapons" instance=ExtResource("313_utnp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.060268402, -3.761053e-05, -0.015306473)
+
+[node name="SM_Wep_Crosshair_04" parent="Weapons" instance=ExtResource("314_cqgud")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31826878, -3.761053e-05, -0.015306473)
+
+[node name="SM_Wep_Crosshair_05" parent="Weapons" instance=ExtResource("315_f27nn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5633087, -3.761053e-05, -0.015306473)
+
+[node name="SM_Wep_Crosshair_Sniper_01" parent="Weapons" instance=ExtResource("316_wibtq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3892307, -3.761053e-05, -11.039051)
+
+[node name="SM_Wep_Crowbar_01" parent="Weapons" instance=ExtResource("317_6h185")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3892307, -3.761053e-05, -14.032148)
+
+[node name="SM_Wep_Fireaxe_01" parent="Weapons" instance=ExtResource("318_cyp6h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3892307, -3.761053e-05, -17.063482)
+
+[node name="SM_Wep_Flare_Ammo_01" parent="Weapons" instance=ExtResource("319_qkdlp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4367313, -3.761053e-05, -2.048367)
+
+[node name="SM_Wep_Grenade_01" parent="Weapons" instance=ExtResource("320_g1mjb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.441862, -3.761053e-05, -4.01746)
+
+[node name="SM_Wep_Grenade_Ammo_01" parent="Weapons" instance=ExtResource("321_5mtme")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.43597, -3.761053e-05, -2.0153003)
+
+[node name="SM_Wep_Grenade_Ammo_Box_01" parent="Weapons" instance=ExtResource("322_6wuri")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.436731, -3.761053e-05, -6.0153003)
+
+[node name="SM_Wep_Grenade_Ammo_Pile_01" parent="Weapons" instance=ExtResource("323_qr76o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.435823, -3.761053e-05, -2.0153003)
+
+[node name="SM_Wep_Grenade_Launcher_01" parent="Weapons" instance=ExtResource("324_dfei8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3654804, -3.761053e-05, -20.18781)
+
+[node name="SM_Wep_Grenade_Smoke_01" parent="Weapons" instance=ExtResource("325_umr8y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.436731, -3.761053e-05, -4.0153003)
+
+[node name="SM_Wep_Machete_01" parent="Weapons" instance=ExtResource("326_gygmh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3892307, -3.761053e-05, -8.031057)
+
+[node name="SM_Wep_MachineGun_01" parent="Weapons" instance=ExtResource("327_ogujv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.447031, -3.761053e-05, -17.242353)
+
+[node name="SM_Wep_Pan_01" parent="Weapons" instance=ExtResource("328_gicwm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6582699, -3.761053e-05, -23.162918)
+
+[node name="SM_Wep_Pickaxe_01" parent="Weapons" instance=ExtResource("329_67cwf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.658267, -3.761053e-05, -20.100471)
+
+[node name="SM_Wep_Pistol_Ammo_01" parent="Weapons" instance=ExtResource("330_b6l2y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9177322, -3.761053e-05, -0.015340328)
+
+[node name="SM_Wep_Pistol_Ammo_Box_01" parent="Weapons" instance=ExtResource("331_wmiec")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7524338, -3.761053e-05, -6.0153003)
+
+[node name="SM_Wep_Pistol_Ammo_Pile_01" parent="Weapons" instance=ExtResource("332_xrj3f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.436817, -3.761053e-05, -0.015707016)
+
+[node name="SM_Wep_Pistol_Bullet_01" parent="Weapons" instance=ExtResource("333_40fbk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4365673, -3.761053e-05, -0.015300274)
+
+[node name="SM_Wep_Pistol_Flare_01" parent="Weapons" instance=ExtResource("334_tw5m2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.436731, -3.761053e-05, -11.091444)
+
+[node name="SM_Wep_Pistol_Heavy_01" parent="Weapons" instance=ExtResource("335_kss7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6582699, -3.761053e-05, -8.116153)
+
+[node name="SM_Wep_Pistol_Revolver_01" parent="Weapons" instance=ExtResource("336_leuv8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3654804, -3.761053e-05, -8.186012)
+
+[node name="SM_Wep_Revolver_Snub_01" parent="Weapons" instance=ExtResource("337_le3fr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4367313, -3.761053e-05, -23.0153)
+
+[node name="SM_Wep_Rifle_Assault_01" parent="Weapons" instance=ExtResource("338_jiwpf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.432856, -3.761053e-05, -14.313476)
+
+[node name="SM_Wep_Rifle_Assault_02" parent="Weapons" instance=ExtResource("339_sm1xp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.436731, -3.761053e-05, -7.996088)
+
+[node name="SM_Wep_Rifle_Assault_03" parent="Weapons" instance=ExtResource("340_tuv3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6589241, -3.761053e-05, -11.224615)
+
+[node name="SM_Wep_Rifle_Assault_04" parent="Weapons" instance=ExtResource("341_k1xp7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3654804, -3.761053e-05, -14.368582)
+
+[node name="SM_Wep_Rifle_Assault_05" parent="Weapons" instance=ExtResource("342_gu4qs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6582699, -3.761053e-05, -14.277065)
+
+[node name="SM_Wep_RiotShield_01" parent="Weapons" instance=ExtResource("343_dbgwt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3654804, -3.761053e-05, -23.174858)
+
+[node name="SM_Wep_RPG_01" parent="Weapons" instance=ExtResource("344_sjftb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3892307, -3.761053e-05, -19.742239)
+
+[node name="SM_Wep_RPG_Rocket_Active_01" parent="Weapons" instance=ExtResource("345_k72rj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.436731, -3.761053e-05, -20.110302)
+
+[node name="SM_Wep_Shotgun_01" parent="Weapons" instance=ExtResource("346_kl41t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.413813, -3.761053e-05, -11.4405155)
+
+[node name="SM_Wep_Shotgun_Ammo_01" parent="Weapons" instance=ExtResource("347_shfm4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8827305, -3.761053e-05, -0.015482426)
+
+[node name="SM_Wep_Shotgun_Ammo_Box_01" parent="Weapons" instance=ExtResource("348_bvnyp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.294857, -3.761053e-05, -6.0153003)
+
+[node name="SM_Wep_Shotgun_Ammo_Pile_01" parent="Weapons" instance=ExtResource("349_mcn54")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.437521, -3.761053e-05, -2.0160851)
+
+[node name="SM_Wep_Sniper_01" parent="Weapons" instance=ExtResource("350_emhpt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.412981, -3.761053e-05, -17.47421)
+
+[node name="SM_Wep_Sniper_Heavy_01" parent="Weapons" instance=ExtResource("351_p75hc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.433046, -3.761053e-05, -20.594002)
+
+[node name="SM_Wep_Sniper_Lite_01" parent="Weapons" instance=ExtResource("352_axgey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3654804, -3.761053e-05, -11.396305)
+
+[node name="SM_Wep_Sniper_Mil_01" parent="Weapons" instance=ExtResource("353_22w1r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.414349, -3.761053e-05, -8.352301)
+
+[node name="SM_Wep_SubMGun_01" parent="Weapons" instance=ExtResource("354_an6sr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3654804, -3.761053e-05, -17.086552)
+
+[node name="SM_Wep_SubMGun_Lite_01" parent="Weapons" instance=ExtResource("355_okac0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.412981, -3.761053e-05, -14.137821)
+
+[editable path="Buildings/SM_Bld_House_01"]
+[editable path="Buildings/SM_Bld_House_02"]
+[editable path="Buildings/SM_Bld_House_03"]
+[editable path="Buildings/SM_Bld_House_Glass_01"]
+[editable path="Buildings/SM_Bld_SmallBuilding_01"]
+[editable path="Buildings/SM_Bld_SmallBuilding_02"]
+[editable path="Buildings/SM_Bld_SmallBuilding_03"]
+[editable path="Buildings/SM_Bld_Tent_01"]
+[editable path="Buildings/SM_Bld_Tent_02"]
+[editable path="Buildings/SM_Bld_Warehouse_01"]
+[editable path="Buildings/SM_Bld_Window_Bars_01"]
+[editable path="Buildings/SM_Bld_WoodenShack_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Ammo_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Bag_Lvl1"]
+[editable path="Character_Attachments/SM_Chr_Attach_Bag_Lvl2"]
+[editable path="Character_Attachments/SM_Chr_Attach_Bag_Lvl3"]
+[editable path="Character_Attachments/SM_Chr_Attach_Beard_02"]
+[editable path="Character_Attachments/SM_Chr_Attach_Beard_03"]
+[editable path="Character_Attachments/SM_Chr_Attach_Beard_04"]
+[editable path="Character_Attachments/SM_Chr_Attach_Beard_05"]
+[editable path="Character_Attachments/SM_Chr_Attach_Beard_06"]
+[editable path="Character_Attachments/SM_Chr_Attach_Beard_07"]
+[editable path="Character_Attachments/SM_Chr_Attach_Bedroll_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Bedroll_02"]
+[editable path="Character_Attachments/SM_Chr_Attach_Earmuffs_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Eyepatch_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Facemask_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Facemask_02"]
+[editable path="Character_Attachments/SM_Chr_Attach_Facemask_03"]
+[editable path="Character_Attachments/SM_Chr_Attach_Female_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Female_02"]
+[editable path="Character_Attachments/SM_Chr_Attach_Female_Armor_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Female_Armor_02"]
+[editable path="Character_Attachments/SM_Chr_Attach_Female_Armor_03"]
+[editable path="Character_Attachments/SM_Chr_Attach_Female_Default_Hair_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Female_Hair_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Female_Hair_Pigtails_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_GasMask_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Glasses_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Bandana_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Beanie_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Beer_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Bunny_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Cap_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Captian_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Cowboy_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Crown_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Cupcake_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Elf_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Fez_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_FlatTop_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Football_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_IceCream_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Irish_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Knight_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Mexican_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Mil_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Party_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Pot_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Racoon_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Roadcone_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Roman_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Samurai_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Shark_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Squid_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Tacticle_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Turban_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Hat_Unicorn_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Helmet_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Helmet_02"]
+[editable path="Character_Attachments/SM_Chr_Attach_Helmet_03"]
+[editable path="Character_Attachments/SM_Chr_Attach_Male_Armor_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Male_Armor_02"]
+[editable path="Character_Attachments/SM_Chr_Attach_Male_Armor_03"]
+[editable path="Character_Attachments/SM_Chr_Attach_Male_Default_Hair_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Male_Hair_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Male_Hair_02"]
+[editable path="Character_Attachments/SM_Chr_Attach_Male_Hair_03"]
+[editable path="Character_Attachments/SM_Chr_Attach_Male_Hair_04"]
+[editable path="Character_Attachments/SM_Chr_Attach_Male_Hair_05"]
+[editable path="Character_Attachments/SM_Chr_Attach_Male_Hair_06"]
+[editable path="Character_Attachments/SM_Chr_Attach_Male_Hair_07"]
+[editable path="Character_Attachments/SM_Chr_Attach_Pouch_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Pouch_02"]
+[editable path="Character_Attachments/SM_Chr_Attach_Pouch_03"]
+[editable path="Character_Attachments/SM_Chr_Attach_Pouch_04"]
+[editable path="Character_Attachments/SM_Chr_Attach_Pouch_05"]
+[editable path="Character_Attachments/SM_Chr_Attach_Pouch_06"]
+[editable path="Character_Attachments/SM_Chr_Attach_Pouch_07"]
+[editable path="Character_Attachments/SM_Chr_Attach_Pouch_08"]
+[editable path="Character_Attachments/SM_Chr_Attach_Scarf_01"]
+[editable path="Character_Attachments/SM_Chr_Attach_Scarf_02"]
+[editable path="Character_Attachments/SM_Chr_Patch_Flag_01"]
+[editable path="Character_Attachments/SM_Chr_Patch_Leaf_01"]
+[editable path="Character_Attachments/SM_Chr_Patch_Medic_01"]
+[editable path="Character_Attachments/SM_Chr_Patch_Medic_02"]
+[editable path="Character_Attachments/SM_Chr_Patch_Rank_01"]
+[editable path="Character_Attachments/SM_Chr_Patch_Rank_02"]
+[editable path="Character_Attachments/SM_Chr_Patch_Rank_03"]
+[editable path="Character_Attachments/SM_Chr_Patch_Star_01"]
+[editable path="Character_Attachments/SM_Chr_Patch_Star_02"]
+[editable path="Character_PickUps/SM_PickUp_Armor_01"]
+[editable path="Character_PickUps/SM_PickUp_Armor_02"]
+[editable path="Character_PickUps/SM_PickUp_Armor_03"]
+[editable path="Character_PickUps/SM_PickUp_Bag_01"]
+[editable path="Character_PickUps/SM_PickUp_Bag_02"]
+[editable path="Character_PickUps/SM_PickUp_Bag_03"]
+[editable path="Environments/SM_Env_Beach_01"]
+[editable path="Environments/SM_Env_Beach_Staight_01"]
+[editable path="Environments/SM_Env_Beach_Staight_02"]
+[editable path="Environments/SM_Env_Bridge_01"]
+[editable path="Environments/SM_Env_Bridge_02"]
+[editable path="Environments/SM_Env_Bridge_Broken_01"]
+[editable path="Environments/SM_Env_Bridge_Support_01"]
+[editable path="Environments/SM_Env_Concrete_Base_01"]
+[editable path="Environments/SM_Env_DirtRoad_End_01"]
+[editable path="Environments/SM_Env_DirtRoad_Straight_01"]
+[editable path="Environments/SM_Env_Dock_01"]
+[editable path="Environments/SM_Env_Dock_Poles_01"]
+[editable path="Environments/SM_Env_Grass_Circle_01"]
+[editable path="Environments/SM_Env_Grass_Circle_02"]
+[editable path="Environments/SM_Env_Grass_Square_01"]
+[editable path="Environments/SM_Env_Port_Boat_Tie_01"]
+[editable path="Environments/SM_Env_Port_Concrete_Slab_01"]
+[editable path="Environments/SM_Env_Port_Wall_01"]
+[editable path="Environments/SM_Env_Port_Wall_02"]
+[editable path="Environments/SM_Env_Port_Wall_Corner_01"]
+[editable path="Environments/SM_Env_Road_Corner_01"]
+[editable path="Environments/SM_Env_Road_Corner_02"]
+[editable path="Environments/SM_Env_Road_Cross_01"]
+[editable path="Environments/SM_Env_Road_Straight_01"]
+[editable path="Environments/SM_Env_Road_Straight_02"]
+[editable path="Environments/SM_Env_Road_Straight_03"]
+[editable path="Environments/SM_Env_Road_Straight_Damaged_01"]
+[editable path="Environments/SM_Env_Road_Straight_Damaged_02"]
+[editable path="Environments/SM_Env_Road_Straight_Damaged_03"]
+[editable path="Environments/SM_Env_Road_Straight_End_01"]
+[editable path="Environments/SM_Env_Road_T_01"]
+[editable path="Environments/SM_Env_Rock_01"]
+[editable path="Environments/SM_Env_Rock_02"]
+[editable path="Environments/SM_Env_Rubble_Pebbles_01"]
+[editable path="Environments/SM_Env_Rubble_Pebbles_02"]
+[editable path="Environments/SM_Env_Rubble_Pebbles_03"]
+[editable path="Environments/SM_Env_Rubble_Pile_01"]
+[editable path="Environments/SM_Env_Rubble_Pile_02"]
+[editable path="Environments/SM_Env_Rubble_Plank_01"]
+[editable path="Environments/SM_Env_Rubble_Plank_02"]
+[editable path="Environments/SM_Env_Rubble_Plank_03"]
+[editable path="Environments/SM_Env_Rubble_Stone_01"]
+[editable path="Environments/SM_Env_Rubble_Stone_02"]
+[editable path="Generic/SM_Env_Bush_01"]
+[editable path="Generic/SM_Env_Bush_02"]
+[editable path="Generic/SM_Env_Bush_03"]
+[editable path="Generic/SM_Env_Bush_04"]
+[editable path="Generic/SM_Generic_Cloud_01"]
+[editable path="Generic/SM_Generic_Cloud_02"]
+[editable path="Generic/SM_Generic_Cloud_03"]
+[editable path="Generic/SM_Generic_Cloud_04"]
+[editable path="Generic/SM_Generic_Grass_Patch_01"]
+[editable path="Generic/SM_Generic_Grass_Patch_02"]
+[editable path="Generic/SM_Generic_Mountains_Grass_01"]
+[editable path="Generic/SM_Generic_Mountains_Grass_02"]
+[editable path="Generic/SM_Generic_Mountains_Snow_01"]
+[editable path="Generic/SM_Generic_Mountains_Soft_01"]
+[editable path="Generic/SM_Generic_Small_Rocks_01"]
+[editable path="Generic/SM_Generic_Small_Rocks_02"]
+[editable path="Generic/SM_Generic_Tree_01"]
+[editable path="Generic/SM_Generic_Tree_02"]
+[editable path="Generic/SM_Generic_Tree_03"]
+[editable path="Generic/SM_Generic_Tree_04"]
+[editable path="Generic/SM_Generic_TreeDead_01"]
+[editable path="Generic/SM_Generic_TreeStump_01"]
+[editable path="Props/SM_Prop_AmmoBox_01"]
+[editable path="Props/SM_Prop_Bandage_01"]
+[editable path="Props/SM_Prop_Bandage_02"]
+[editable path="Props/SM_Prop_Barrel_01"]
+[editable path="Props/SM_Prop_Barrel_02"]
+[editable path="Props/SM_Prop_Barricade_01"]
+[editable path="Props/SM_Prop_Barrier_01"]
+[editable path="Props/SM_Prop_Barrier_02"]
+[editable path="Props/SM_Prop_Barrier_03"]
+[editable path="Props/SM_Prop_Barrier_04"]
+[editable path="Props/SM_Prop_Barrier_Dirt_01"]
+[editable path="Props/SM_Prop_BaseWall_01"]
+[editable path="Props/SM_Prop_BaseWall_Broken_01"]
+[editable path="Props/SM_Prop_BaseWall_Broken_02"]
+[editable path="Props/SM_Prop_BaseWall_Post_01"]
+[editable path="Props/SM_Prop_Benchpress_01"]
+[editable path="Props/SM_Prop_BriefcaseBomb_01"]
+[editable path="Props/SM_Prop_BunkBed_01"]
+[editable path="Props/SM_Prop_C4_01"]
+[editable path="Props/SM_Prop_C4_02"]
+[editable path="Props/SM_Prop_CardboardBox_01"]
+[editable path="Props/SM_Prop_Cinderblock_01"]
+[editable path="Props/SM_Prop_Cinderblock_Wall_01"]
+[editable path="Props/SM_Prop_Container_01"]
+[editable path="Props/SM_Prop_Container_Small_01"]
+[editable path="Props/SM_Prop_Crate_01"]
+[editable path="Props/SM_Prop_Crate_Large_01"]
+[editable path="Props/SM_Prop_Crate_Medical_01"]
+[editable path="Props/SM_Prop_Crate_Small_01"]
+[editable path="Props/SM_Prop_EmergencyDrop_01"]
+[editable path="Props/SM_Prop_EmergencyDrop_Crate_01"]
+[editable path="Props/SM_Prop_Gauze_01"]
+[editable path="Props/SM_Prop_Generator_01"]
+[editable path="Props/SM_Prop_GuardTower_01"]
+[editable path="Props/SM_Prop_HeadBase_Black"]
+[editable path="Props/SM_Prop_HeadBase_Grey"]
+[editable path="Props/SM_Prop_HeadBase_Skin"]
+[editable path="Props/SM_Prop_HeadBase_White"]
+[editable path="Props/SM_Prop_Iron_Sheet_01"]
+[editable path="Props/SM_Prop_Iron_Sheet_02"]
+[editable path="Props/SM_Prop_Iron_Sheet_03"]
+[editable path="Props/SM_Prop_Key_01"]
+[editable path="Props/SM_Prop_Key_02"]
+[editable path="Props/SM_Prop_Key_03"]
+[editable path="Props/SM_Prop_MedicalBox_01"]
+[editable path="Props/SM_Prop_MedicalBox_02"]
+[editable path="Props/SM_Prop_MissileStack_01"]
+[editable path="Props/SM_Prop_Needle_01"]
+[editable path="Props/SM_Prop_Padlock_01"]
+[editable path="Props/SM_Prop_Padlock_02"]
+[editable path="Props/SM_Prop_Pallet_01"]
+[editable path="Props/SM_Prop_Pallet_Loaded_01"]
+[editable path="Props/SM_Prop_Pallet_Loaded_02"]
+[editable path="Props/SM_Prop_PalletStack_01"]
+[editable path="Props/SM_Prop_Parachute_01"]
+[editable path="Props/SM_Prop_Pills_01"]
+[editable path="Props/SM_Prop_Pills_02"]
+[editable path="Props/SM_Prop_Portaloo_01"]
+[editable path="Props/SM_Prop_Propane_01"]
+[editable path="Props/SM_Prop_Propane_Tall_01"]
+[editable path="Props/SM_Prop_RadioTower_01"]
+[editable path="Props/SM_Prop_Range_Trable_01"]
+[editable path="Props/SM_Prop_Range_Wall_01"]
+[editable path="Props/SM_Prop_Range_Wall_02"]
+[editable path="Props/SM_Prop_Range_Wall_03"]
+[editable path="Props/SM_Prop_Range_Wall_Door_01"]
+[editable path="Props/SM_Prop_Range_Wall_Half_01"]
+[editable path="Props/SM_Prop_Range_Wall_Post_01"]
+[editable path="Props/SM_Prop_Range_Wall_Window_01"]
+[editable path="Props/SM_Prop_Rubbish_Bottle_01"]
+[editable path="Props/SM_Prop_Rubbish_Can_01"]
+[editable path="Props/SM_Prop_Rubbish_Can_02"]
+[editable path="Props/SM_Prop_Rubbish_Paper_01"]
+[editable path="Props/SM_Prop_Rubbish_Paper_02"]
+[editable path="Props/SM_Prop_Rubbish_Paper_03"]
+[editable path="Props/SM_Prop_Rubbish_Papers_01"]
+[editable path="Props/SM_Prop_Rubbish_Papers_02"]
+[editable path="Props/SM_Prop_Rubbish_Papers_03"]
+[editable path="Props/SM_Prop_Slatbox_01"]
+[editable path="Props/SM_Prop_Spotlight_01"]
+[editable path="Props/SM_Prop_TankTrap_01"]
+[editable path="Props/SM_Prop_Target_01"]
+[editable path="Props/SM_Prop_Tire_01"]
+[editable path="Props/SM_Prop_TireStack_01"]
+[editable path="Props/SM_Prop_Transformer_01"]
+[editable path="Props/SM_Prop_WeaponCase_01"]
+[editable path="Props/SM_Prop_WireFence_01"]
+[editable path="Props/SM_Prop_WireFence_02"]
+[editable path="Props/SM_Prop_Wirespool_01"]
+[editable path="Props/SM_Prop_Wirespool_02"]
+[editable path="Props/SM_Prop_WoodPlank_01"]
+[editable path="Vehicles/SM_Veh_Armored_Car_01"]
+[editable path="Vehicles/SM_Veh_Armored_Car_Destroyed_01"]
+[editable path="Vehicles/SM_Veh_Bike_01"]
+[editable path="Vehicles/SM_Veh_Bike_Destroyed_01"]
+[editable path="Vehicles/SM_Veh_Boat_01"]
+[editable path="Vehicles/SM_Veh_Boat_Destroyed_01"]
+[editable path="Vehicles/SM_Veh_Buggy_01"]
+[editable path="Vehicles/SM_Veh_Buggy_Destroyed_01"]
+[editable path="Vehicles/SM_Veh_Car_01"]
+[editable path="Vehicles/SM_Veh_Car_Clean_01"]
+[editable path="Vehicles/SM_Veh_Car_Destroyed_01"]
+[editable path="Vehicles/SM_Veh_Car_Plate_01"]
+[editable path="Vehicles/SM_Veh_Light_Armored_Car_01"]
+[editable path="Vehicles/SM_Veh_Light_Car_Destroyed_01"]
+[editable path="Vehicles/SM_Veh_Plane_01"]
+[editable path="Vehicles/SM_Veh_Plane_Destroyed_01"]
+[editable path="Vehicles/SM_Veh_Tank_Russia_01"]
+[editable path="Vehicles/SM_Veh_Tank_Russia_Destroyed_01"]
+[editable path="Vehicles/SM_Veh_Tank_USA_01"]
+[editable path="Vehicles/SM_Veh_Tank_USA_Destroyed_01"]
+[editable path="Vehicles/SM_Veh_Truck_01"]
+[editable path="Vehicles/SM_Veh_Truck_Destroyed_01"]
+[editable path="Weapons/SM_Wep_Ammo_BulletLarge_01"]
+[editable path="Weapons/SM_Wep_Attachment_Grip_01"]
+[editable path="Weapons/SM_Wep_Attachment_Redot_01"]
+[editable path="Weapons/SM_Wep_Attachment_Silencer_01"]
+[editable path="Weapons/SM_Wep_Bat_01"]
+[editable path="Weapons/SM_Wep_Bullet_Ammo_01"]
+[editable path="Weapons/SM_Wep_Bullet_Ammo_02"]
+[editable path="Weapons/SM_Wep_Bullet_Ammo_Box_01"]
+[editable path="Weapons/SM_Wep_Bullet_Ammo_Box_02"]
+[editable path="Weapons/SM_Wep_Bullet_Ammo_Pile_01"]
+[editable path="Weapons/SM_Wep_Crosshair_01"]
+[editable path="Weapons/SM_Wep_Crosshair_02"]
+[editable path="Weapons/SM_Wep_Crosshair_03"]
+[editable path="Weapons/SM_Wep_Crosshair_04"]
+[editable path="Weapons/SM_Wep_Crosshair_05"]
+[editable path="Weapons/SM_Wep_Crosshair_Sniper_01"]
+[editable path="Weapons/SM_Wep_Crowbar_01"]
+[editable path="Weapons/SM_Wep_Fireaxe_01"]
+[editable path="Weapons/SM_Wep_Flare_Ammo_01"]
+[editable path="Weapons/SM_Wep_Grenade_01"]
+[editable path="Weapons/SM_Wep_Grenade_Ammo_01"]
+[editable path="Weapons/SM_Wep_Grenade_Ammo_Box_01"]
+[editable path="Weapons/SM_Wep_Grenade_Ammo_Pile_01"]
+[editable path="Weapons/SM_Wep_Grenade_Launcher_01"]
+[editable path="Weapons/SM_Wep_Grenade_Smoke_01"]
+[editable path="Weapons/SM_Wep_Machete_01"]
+[editable path="Weapons/SM_Wep_MachineGun_01"]
+[editable path="Weapons/SM_Wep_Pan_01"]
+[editable path="Weapons/SM_Wep_Pickaxe_01"]
+[editable path="Weapons/SM_Wep_Pistol_Ammo_01"]
+[editable path="Weapons/SM_Wep_Pistol_Ammo_Box_01"]
+[editable path="Weapons/SM_Wep_Pistol_Ammo_Pile_01"]
+[editable path="Weapons/SM_Wep_Pistol_Bullet_01"]
+[editable path="Weapons/SM_Wep_Pistol_Flare_01"]
+[editable path="Weapons/SM_Wep_Pistol_Heavy_01"]
+[editable path="Weapons/SM_Wep_Pistol_Revolver_01"]
+[editable path="Weapons/SM_Wep_Revolver_Snub_01"]
+[editable path="Weapons/SM_Wep_Rifle_Assault_01"]
+[editable path="Weapons/SM_Wep_Rifle_Assault_02"]
+[editable path="Weapons/SM_Wep_Rifle_Assault_03"]
+[editable path="Weapons/SM_Wep_Rifle_Assault_04"]
+[editable path="Weapons/SM_Wep_Rifle_Assault_05"]
+[editable path="Weapons/SM_Wep_RiotShield_01"]
+[editable path="Weapons/SM_Wep_RPG_01"]
+[editable path="Weapons/SM_Wep_RPG_Rocket_Active_01"]
+[editable path="Weapons/SM_Wep_Shotgun_01"]
+[editable path="Weapons/SM_Wep_Shotgun_Ammo_01"]
+[editable path="Weapons/SM_Wep_Shotgun_Ammo_Box_01"]
+[editable path="Weapons/SM_Wep_Shotgun_Ammo_Pile_01"]
+[editable path="Weapons/SM_Wep_Sniper_01"]
+[editable path="Weapons/SM_Wep_Sniper_Heavy_01"]
+[editable path="Weapons/SM_Wep_Sniper_Lite_01"]
+[editable path="Weapons/SM_Wep_Sniper_Mil_01"]
+[editable path="Weapons/SM_Wep_SubMGun_01"]
+[editable path="Weapons/SM_Wep_SubMGun_Lite_01"]

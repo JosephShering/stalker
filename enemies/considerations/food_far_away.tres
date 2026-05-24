@@ -1,0 +1,10 @@
+[gd_resource type="Consideration" format=3 uid="uid://dqxcvxaixqop2"]
+
+[sub_resource type="Curve" id="Curve_8hjo3"]
+_data = [Vector2(0, 0), 0.0, 0.11782059, 0, 0, Vector2(1, 1), 2.634948, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+key = "nearest_food"
+max = 5.0
+curve = SubResource("Curve_8hjo3")

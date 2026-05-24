@@ -1,0 +1,10 @@
+[gd_resource type="Consideration" format=3 uid="uid://fgkwks3o27ar"]
+
+[sub_resource type="Curve" id="Curve_8hjo3"]
+_data = [Vector2(0.7526998, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 1.8679132, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+key = "enemy_distance"
+max = 30.0
+curve = SubResource("Curve_8hjo3")

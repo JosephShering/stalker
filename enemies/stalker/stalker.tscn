@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dqysunjlujb7m"]
+
+[ext_resource type="PackedScene" uid="uid://ctx5mcp7vijbs" path="res://vendor/PolygonBattleRoyale/Prefabs/Characters/Characters/Character_MilitaryMale_01.tscn" id="1_at01k"]
+[ext_resource type="PackedScene" uid="uid://bvhws0yl2db1t" path="res://vendor/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Beard_02.tscn" id="2_x6q7c"]
+[ext_resource type="PackedScene" uid="uid://cxkf4v7cf6m72" path="res://vendor/PolygonBattleRoyale/Prefabs/Characters/Attachments/SM_Chr_Attach_Male_Hair_01.tscn" id="3_x6q7c"]
+
+[node name="Stalker" type="Node3D" unique_id=586162679]
+
+[node name="Character_MilitaryMale_01" parent="." unique_id=1936146405 instance=ExtResource("1_at01k")]
+
+[node name="SM_Char_Attach_Male_Armor_03" parent="Character_MilitaryMale_01/Skeleton3D" index="17"]
+visible = true
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="Character_MilitaryMale_01/Skeleton3D" index="21" unique_id=905024323]
+transform = Transform3D(1, -4.502033e-15, 2.1585241e-15, 4.5020335e-15, 1, -4.4703484e-08, -2.1585246e-15, 1.4901161e-08, 1.0000001, -1.5691787e-15, 1.5691124, 0.010028185)
+bone_name = "Head"
+bone_idx = 34
+
+[node name="SM_Chr_Attach_Beard_02" parent="Character_MilitaryMale_01/Skeleton3D/BoneAttachment3D" unique_id=551546103 instance=ExtResource("2_x6q7c")]
+
+[node name="SM_Chr_Attach_Male_Hair_01" parent="Character_MilitaryMale_01/Skeleton3D/BoneAttachment3D" unique_id=1279321426 instance=ExtResource("3_x6q7c")]
+
+[editable path="Character_MilitaryMale_01"]

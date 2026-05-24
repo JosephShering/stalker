@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://c3amrn33xgao4"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_h46vi"]
+radius = 0.3
+height = 1.65
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_bq184"]
+radius = 0.35
+height = 1.65
+
+[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_kqu6x"]
+
+[node name="Player" type="PlayerCharacterBody" unique_id=1126099932 node_paths=PackedStringArray("collision_shape", "gimbal", "camera", "below_raycast", "ahead_raycast")]
+collision_shape = NodePath("CollisionShape3D")
+gimbal = NodePath("Gimbal")
+camera = NodePath("Gimbal/Camera3D")
+below_raycast = NodePath("StairsBelow")
+ahead_raycast = NodePath("StairsAhead")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1968903894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.825, 0)
+shape = SubResource("CapsuleShape3D_h46vi")
+
+[node name="Gimbal" type="Node3D" parent="." unique_id=808364210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Gimbal" unique_id=2011725832]
+current = true
+
+[node name="StairsBelow" type="RayCast3D" parent="." unique_id=242558077]
+target_position = Vector3(0, -0.25, 0)
+
+[node name="StairsAhead" type="RayCast3D" parent="." unique_id=305283875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.652, -0.3939786)
+target_position = Vector3(0, -0.5, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1290627590]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.825, 0)
+gi_mode = 2
+mesh = SubResource("CapsuleMesh_bq184")
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="." unique_id=1782542270]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, -0.35)
+shape = SubResource("SeparationRayShape3D_kqu6x")
+target_position = Vector3(0, -0.25, 0)

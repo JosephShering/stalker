@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://bqry3dtuwxb27"]
+
+[ext_resource type="Script" uid="uid://c46ovp3pskcfr" path="res://prefabs/campfire/CampfireSeat.cs" id="1_e4wuf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gp0u0"]
+albedo_color = Color(1, 0.24000001, 0.24000001, 1)
+
+[node name="Campfire" type="Node3D" unique_id=1188960477]
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="." unique_id=1476237119]
+material = SubResource("StandardMaterial3D_gp0u0")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=648810245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.78304434, 0)
+billboard = 1
+double_sided = false
+text = "Fire"
+
+[node name="CampfireSeat" type="Node3D" parent="." unique_id=2123908853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.73151803, 0, -1.0498561)
+script = ExtResource("1_e4wuf")
+metadata/_custom_type_script = "uid://c46ovp3pskcfr"
+
+[node name="CampfireSeat2" type="Node3D" parent="." unique_id=1918568475]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0816495, 0, -0.8279727)
+script = ExtResource("1_e4wuf")
+metadata/_custom_type_script = "uid://c46ovp3pskcfr"
+
+[node name="CampfireSeat3" type="Node3D" parent="." unique_id=1196389071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1851096, 0, 1.001904)
+script = ExtResource("1_e4wuf")
+metadata/_custom_type_script = "uid://c46ovp3pskcfr"
+
+[node name="CampfireSeat4" type="Node3D" parent="." unique_id=1986299199]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8860276, 0, 0.86915755)
+script = ExtResource("1_e4wuf")
+metadata/_custom_type_script = "uid://c46ovp3pskcfr"
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=403074000]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.68292415, 0)
+light_color = Color(0.86362517, 0.5213834, 0.38239914, 1)
+omni_range = 5.838
+omni_attenuation = -0.232

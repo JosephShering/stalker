@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://6okkw3xd50ln"]
+
+[ext_resource type="Sky" uid="uid://docgjxdk26vqo" path="res://vendor/BinbunSky/skies/stylized/stylized_cold_sky_01.tres" id="1_f4v57"]
+
+[sub_resource type="Environment" id="Environment_j57du"]
+background_mode = 2
+sky = ExtResource("1_f4v57")
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
+fog_enabled = true
+fog_light_color = Color(0.35154387, 0.44644153, 0.71410775, 1)
+fog_sky_affect = 0.0
+
+[node name="DayNightCycle" type="Node3D" unique_id=1467886340]
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1543061521]
+transform = Transform3D(1, 0, 0, 0, 0.39820465, 0.91729647, 0, -0.91729647, 0.39820465, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1046817048]
+environment = SubResource("Environment_j57du")
