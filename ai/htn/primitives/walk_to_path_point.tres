@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="PrimitiveTask" format=3 uid="uid://braqi6pp78u3r"]
+
+[ext_resource type="Script" uid="uid://c4wxyrtivumsh" path="res://Core/HTN/Operator.cs" id="1_v71eh"]
+[ext_resource type="Script" uid="uid://ruwv5eqol6nt" path="res://Core/HTN/PrimitiveTask.cs" id="1_xypk1"]
+
+[sub_resource type="Resource" id="Resource_5tdi0"]
+script = ExtResource("1_v71eh")
+Command = "NavigateToPath"
+metadata/_custom_type_script = "uid://c4wxyrtivumsh"
+
+[resource]
+script = ExtResource("1_xypk1")
+Preconditions = Dictionary[String, bool]({
+"on_path": false
+})
+Effects = Dictionary[String, bool]({
+"on_path": true
+})
+Operator = SubResource("Resource_5tdi0")
+metadata/_custom_type_script = "uid://ruwv5eqol6nt"

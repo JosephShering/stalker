@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="PrimitiveTask" format=3 uid="uid://cpa6u4yt0dll3"]
+
+[ext_resource type="Script" uid="uid://c4wxyrtivumsh" path="res://Core/HTN/Operator.cs" id="1_bx70l"]
+[ext_resource type="Script" uid="uid://ruwv5eqol6nt" path="res://Core/HTN/PrimitiveTask.cs" id="1_ht1u4"]
+
+[sub_resource type="Resource" id="Resource_pci2g"]
+script = ExtResource("1_bx70l")
+Command = "FollowPath"
+metadata/_custom_type_script = "uid://c4wxyrtivumsh"
+
+[resource]
+script = ExtResource("1_ht1u4")
+Preconditions = Dictionary[String, bool]({
+"on_path": true
+})
+Effects = Dictionary[String, bool]({
+"on_path": true
+})
+Operator = SubResource("Resource_pci2g")
+metadata/_custom_type_script = "uid://ruwv5eqol6nt"

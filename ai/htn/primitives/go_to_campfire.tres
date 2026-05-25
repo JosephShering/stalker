@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="PrimitiveTask" format=3 uid="uid://bae4jdw2c754o"]
+
+[ext_resource type="Script" uid="uid://c4wxyrtivumsh" path="res://Core/HTN/Operator.cs" id="1_22pac"]
+[ext_resource type="Script" uid="uid://ruwv5eqol6nt" path="res://Core/HTN/PrimitiveTask.cs" id="2_t5yhx"]
+
+[sub_resource type="Resource" id="Resource_fusaf"]
+script = ExtResource("1_22pac")
+Command = "GoToCampfire"
+metadata/_custom_type_script = "uid://c4wxyrtivumsh"
+
+[resource]
+script = ExtResource("2_t5yhx")
+Preconditions = Dictionary[String, bool]({
+"at_campfire": false
+})
+Effects = Dictionary[String, bool]({
+"at_campfire": true
+})
+Operator = SubResource("Resource_fusaf")
+metadata/_custom_type_script = "uid://ruwv5eqol6nt"

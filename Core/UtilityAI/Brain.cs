@@ -7,16 +7,16 @@ using System.Linq;
 public partial class Brain : Node
 {
     [Export]
-    public Blackboard blackboard = null!;
+    public UtilityBlackboard blackboard = null!;
 
     [Export]
-    public Array<Action> Actions = [];
+    public Array<BrainAction> Actions = [];
 
-    public List<(Action action, double score)> Window = [];
+    public List<(BrainAction action, double score)> Window = [];
 
-    public Action? action;
+    public BrainAction? action;
 
-    public Action Run()
+    public BrainAction Run()
     {
         var allScores = Actions.Select((action) => (action, score: action.GetValue(blackboard)));
         Window = allScores.ToList();

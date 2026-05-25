@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BrainAction" format=3 uid="uid://46dunk5qbmtq"]
+
+[ext_resource type="Script" uid="uid://csn6ugq35fnct" path="res://Core/UtilityAI/Consideration.cs" id="1_xd5px"]
+[ext_resource type="Resource" uid="uid://j1wcjtaqhsjh" path="res://ai/utility/considerations/is_tired.tres" id="2_chgmi"]
+[ext_resource type="Script" uid="uid://cx3qkaad23rru" path="res://Core/UtilityAI/BrainAction.cs" id="2_xd5px"]
+
+[resource]
+script = ExtResource("2_xd5px")
+ActionName = "rest_at_campfire"
+Considerations = Array[ExtResource("1_xd5px")]([ExtResource("2_chgmi")])
+metadata/_custom_type_script = "uid://cx3qkaad23rru"

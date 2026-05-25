@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CompoundTask" format=3 uid="uid://dy4xr4ppj50if"]
+
+[ext_resource type="Script" uid="uid://dnpw1qr6pxl5c" path="res://Core/HTN/CompoundTaskMethod.cs" id="1_8yx4s"]
+[ext_resource type="Resource" uid="uid://577boorioo8i" path="res://ai/htn/methods/walk_to_campfire_method.tres" id="2_cn5kh"]
+[ext_resource type="Script" uid="uid://cqmr3aw6m8fuu" path="res://Core/HTN/CompoundTask.cs" id="2_mgnky"]
+
+[resource]
+script = ExtResource("2_mgnky")
+Methods = Array[ExtResource("1_8yx4s")]([ExtResource("2_cn5kh"), null])
+metadata/_custom_type_script = "uid://cqmr3aw6m8fuu"

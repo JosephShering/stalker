@@ -3,7 +3,7 @@ using Godot;
 using Godot.Collections;
 
 [GlobalClass]
-public partial class Action : Resource
+public partial class BrainAction : Resource
 {
     [Export]
     public string ActionName = "";
@@ -11,7 +11,7 @@ public partial class Action : Resource
     [Export]
     public Array<Consideration> Considerations = [];
 
-    public double GetValue(Blackboard blackboard)
+    public double GetValue(UtilityBlackboard blackboard)
     {
         var product = Considerations.Aggregate(1.0, (acc, c) => acc * c.GetValue(blackboard));
 

@@ -1,7 +1,0 @@
-[gd_resource type="Action" format=3 uid="uid://ub5ng711e0x8"]
-
-[ext_resource type="Consideration" uid="uid://0j8cqoyq4gbx" path="res://enemies/considerations/is_tired.tres" id="1_rfyvy"]
-
-[resource]
-action_name = "sleep"
-considerations = Array[Consideration]([ExtResource("1_rfyvy")])

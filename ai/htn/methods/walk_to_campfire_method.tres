@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CompoundTaskMethod" format=3 uid="uid://577boorioo8i"]
+
+[ext_resource type="Script" uid="uid://b3371dyo1g3vk" path="res://Core/HTN/Task.cs" id="1_wfsci"]
+[ext_resource type="Resource" uid="uid://db5bxconldn8w" path="res://ai/htn/primitives/find_and_set_nearest_campfire.tres" id="2_k6cte"]
+[ext_resource type="Resource" uid="uid://bae4jdw2c754o" path="res://ai/htn/primitives/go_to_campfire.tres" id="3_2eyl7"]
+[ext_resource type="Resource" uid="uid://dr7p36miyn6qi" path="res://ai/htn/primitives/sit_at_campfire.tres" id="3_6hyy6"]
+[ext_resource type="Script" uid="uid://dnpw1qr6pxl5c" path="res://Core/HTN/CompoundTaskMethod.cs" id="4_2eyl7"]
+
+[resource]
+script = ExtResource("4_2eyl7")
+Preconditions = Dictionary[String, bool]({
+"at_campfire": false,
+"is_tired": true
+})
+Tasks = Array[ExtResource("1_wfsci")]([ExtResource("2_k6cte"), ExtResource("3_2eyl7"), ExtResource("3_6hyy6")])
+metadata/_custom_type_script = "uid://dnpw1qr6pxl5c"

@@ -1,24 +1,23 @@
-using System;
 using Godot;
 
 
 [GlobalClass]
 public partial class PlayerCharacterBody : CharacterBody3D
 {
-    public event EventHandler OnLand;
-    public event EventHandler OnJump;
+    [Export]
+    private double MoveSpeed = 2.0;
 
     [Export]
-    private double MoveSpeed = 4;
+    private double Acceleration = 5.0;
 
     [Export]
-    private double Acceleration = 10;
+    private double Friction = 15.0;
 
     [Export]
-    private double AirAcceleration = 1;
+    private double AirAcceleration = 1.0;
 
     [Export]
-    private double AirFriction = 1;
+    private double AirFriction = 0.5;
 
     [Export]
     private double JumpHeight = 1.1;
@@ -27,18 +26,9 @@ public partial class PlayerCharacterBody : CharacterBody3D
     private double TimeToPeak = 0.5;
 
     [Export]
-    private double TimeToGround = 0.5;
-
-    [Export]
-    private double StepHeight = 0.25;
-
-    [Export]
-    private double MaxFloorAngle = 45;
+    private double TimeToGround = 0.4;
 
     [ExportGroup("Node Dependencies")]
-
-    [Export]
-    private CollisionShape3D CollisionShape;
 
     [Export]
     private Node3D Gimbal = null!;
@@ -51,14 +41,6 @@ public partial class PlayerCharacterBody : CharacterBody3D
 
     [Export]
     private RayCast3D AheadRaycast = null!;
-
-    private double TimeTo
-    {
-        get
-        {
-            return Velocity.Y > 0 ? TimeToPeak : TimeToGround;
-        }
-    }
 
     private Vector2 InputDirection = Vector2.Zero;
     private Vector2 WorldInputDirection = Vector2.Zero;
@@ -94,16 +76,13 @@ public partial class PlayerCharacterBody : CharacterBody3D
         RotateCamera();
 
         MoveAndSlide();
-
-        // WatchFalling();
-        // WatchLanding();
     }
 
     public void Jump()
     {
         var velocity = Velocity;
 
-        velocity.Y = 2.0f * (float)JumpHeight / (float)TimeToPeak;
+        velocity.Y = (float)(2.0 * JumpHeight / TimeToPeak);
 
         Velocity = velocity;
     }
@@ -127,59 +106,41 @@ public partial class PlayerCharacterBody : CharacterBody3D
         if (IsOnFloor()) return;
 
         var velocity = Velocity;
-        var timeTo = (float)TimeTo;
-        var fdelta = (float)delta;
+        var timeTo = velocity.Y <= 0 ? TimeToGround : TimeToPeak;
 
-        velocity.Y -= (2.0f * (float)JumpHeight / (timeTo * timeTo) * fdelta);
+        var fallSpeed = 2.0 * JumpHeight / (timeTo * timeTo);
+        velocity.Y -= (float)(fallSpeed * delta);
         Velocity = velocity;
     }
 
     private void UpdateVelocity(double delta)
     {
         var currentVelocity = new Vector2(Velocity.X, Velocity.Z);
+        var acceleration = 0.0;
 
-        var acceleration = IsOnFloor() ? Acceleration : AirAcceleration;
+        if (Mathf.IsZeroApprox(WishVelocity.Length()))
+        {
+            if (IsOnFloor())
+                acceleration = Friction;
+            else
+                acceleration = AirFriction;
+        }
+        else
+        {
+            if (IsOnFloor())
+                acceleration = Acceleration;
+            else
+                acceleration = AirAcceleration;
+        }
 
-        var nextVelocity = currentVelocity.MoveToward(WishVelocity, (float)(delta * acceleration));
+        var blendValue = (float)(delta * acceleration);
+        var nextVelocity = currentVelocity.MoveToward(WishVelocity, blendValue);
 
         var velocity = Velocity;
         velocity.X = nextVelocity.X;
         velocity.Z = nextVelocity.Y;
         Velocity = velocity;
     }
-
-    // private void WatchLanding()
-    // {
-    //     var justLanded = IsOnFloor() && !LastIsOnFloor;
-    //     if (!justLanded) return;
-
-    //     OnLand.Invoke(this, EventArgs.Empty);
-
-    //     var query = new PhysicsRayQueryParameters3D()
-    //     {
-    //         From = GlobalPosition,
-    //         To = GlobalPosition + new Vector3(0, -0.2f, 0)
-    //     };
-
-    //     var result = GetWorld3D().DirectSpaceState.IntersectRay(query);
-    //     if (result.Count == 0) return;
-
-    //     var collider = (GodotObject)result["collider"];
-    //     GD.Print(collider);
-    //     //TODO determine material for sound effect to play on land
-
-    //     //TODO determine fall height to take damage and play ouch sound.
-    // }
-
-    // private void WatchFalling()
-    // {
-    //     var justTookOff = !IsOnFloor() && LastIsOnFloor;
-    //     if (!justTookOff) return;
-
-    //     OnJump.Invoke(this, EventArgs.Empty);
-
-    //     WorldJumpHeight = GlobalPosition.Y;
-    // }
 
     private void RotateCamera()
     {
@@ -202,40 +163,6 @@ public partial class PlayerCharacterBody : CharacterBody3D
         Camera.RotationDegrees = deg;
 
         MouseMovement = Vector2.Zero;
-    }
-
-    private void SetupStepRayCasts()
-    {
-        var stepHeight = (float)StepHeight;
-
-        BelowRaycast.TargetPosition = new Vector3(0, -stepHeight, 0);
-
-        AheadRaycast.TargetPosition = new Vector3(0, -stepHeight, 0);
-
-        var shape = (CapsuleShape3D)CollisionShape.Shape;
-        var radius = shape.Radius;
-        var margin = 0.01f;
-        AheadRaycast.Position = new Vector3(0, stepHeight + margin, -radius + margin);
-    }
-
-    private void HandleStep()
-    {
-        var stepHeight = (float)StepHeight;
-        var rid = GetRid();
-        var motion = GlobalTransform;
-        var origin = motion.Origin;
-        var motionParams = new PhysicsTestMotionParameters3D()
-        {
-            From = GlobalTransform,
-            Motion = new Vector3(0, -0.5f, 0)
-        };
-
-        PhysicsServer3D.BodyTestMotion(rid, motionParams);
-    }
-
-    private bool IsSurfaceTooSteep(Vector3 normal)
-    {
-        return normal.AngleTo(Vector3.Up) > FloorMaxAngle;
     }
 
 }

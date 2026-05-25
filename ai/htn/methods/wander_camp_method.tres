@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CompoundTaskMethod" format=3 uid="uid://c4og0cffvwa0b"]
+
+[ext_resource type="Script" uid="uid://b3371dyo1g3vk" path="res://Core/HTN/Task.cs" id="1_jh3an"]
+[ext_resource type="Script" uid="uid://dnpw1qr6pxl5c" path="res://Core/HTN/CompoundTaskMethod.cs" id="2_1ao7q"]
+[ext_resource type="Resource" uid="uid://braqi6pp78u3r" path="res://ai/htn/primitives/walk_to_path_point.tres" id="2_fj8sp"]
+[ext_resource type="Resource" uid="uid://cpa6u4yt0dll3" path="res://ai/htn/primitives/follow_path.tres" id="3_l7rtv"]
+
+[resource]
+script = ExtResource("2_1ao7q")
+Tasks = Array[ExtResource("1_jh3an")]([ExtResource("2_fj8sp"), ExtResource("3_l7rtv")])
+metadata/_custom_type_script = "uid://dnpw1qr6pxl5c"

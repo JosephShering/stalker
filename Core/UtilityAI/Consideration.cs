@@ -12,7 +12,7 @@ public partial class Consideration : Resource
     [Export]
     public double Highend = 1.0;
 
-    public double GetValue(Blackboard blackboard)
+    public double GetValue(UtilityBlackboard blackboard)
     {
         var exists = blackboard.Data.TryGetValue(BlackboardKey, out float value);
         if (!exists)

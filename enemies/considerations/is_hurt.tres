@@ -1,9 +1,0 @@
-[gd_resource type="Consideration" format=3 uid="uid://wt038avmtxck"]
-
-[sub_resource type="Curve" id="Curve_8hjo3"]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.38552913, 0), 0.0, 0.0, 0, 0]
-point_count = 2
-
-[resource]
-key = "health"
-curve = SubResource("Curve_8hjo3")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Consideration" format=3 uid="uid://j1wcjtaqhsjh"]
+
+[ext_resource type="Script" uid="uid://csn6ugq35fnct" path="res://Core/UtilityAI/Consideration.cs" id="1_7qcyp"]
+
+[sub_resource type="Curve" id="Curve_g3hfm"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.49779737, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+script = ExtResource("1_7qcyp")
+BlackboardKey = "energy"
+Curve = SubResource("Curve_g3hfm")
+metadata/_custom_type_script = "uid://csn6ugq35fnct"

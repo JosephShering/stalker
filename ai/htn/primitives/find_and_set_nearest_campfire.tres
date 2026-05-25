@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="PrimitiveTask" format=3 uid="uid://db5bxconldn8w"]
+
+[ext_resource type="Script" uid="uid://c4wxyrtivumsh" path="res://Core/HTN/Operator.cs" id="1_jphuq"]
+[ext_resource type="Script" uid="uid://ruwv5eqol6nt" path="res://Core/HTN/PrimitiveTask.cs" id="2_iceb0"]
+
+[sub_resource type="Resource" id="Resource_r7mmy"]
+script = ExtResource("1_jphuq")
+Command = "LookForCampfire"
+metadata/_custom_type_script = "uid://c4wxyrtivumsh"
+
+[resource]
+script = ExtResource("2_iceb0")
+Effects = Dictionary[String, bool]({
+"found_campfire": true
+})
+Operator = SubResource("Resource_r7mmy")
+metadata/_custom_type_script = "uid://ruwv5eqol6nt"
