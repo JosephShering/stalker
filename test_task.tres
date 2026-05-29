@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CompoundTask" format=3 uid="uid://ddycissandfn1"]
+
+[ext_resource type="Script" uid="uid://dnpw1qr6pxl5c" path="res://Core/HTN/CompoundTaskMethod.cs" id="1_10gr6"]
+[ext_resource type="Script" uid="uid://b3371dyo1g3vk" path="res://Core/HTN/Task.cs" id="2_bfewt"]
+[ext_resource type="Script" uid="uid://ruwv5eqol6nt" path="res://Core/HTN/PrimitiveTask.cs" id="3_8f4oc"]
+[ext_resource type="Script" uid="uid://cqmr3aw6m8fuu" path="res://Core/HTN/CompoundTask.cs" id="4_qboum"]
+
+[sub_resource type="Resource" id="Resource_ym35m"]
+script = ExtResource("3_8f4oc")
+
+[sub_resource type="Resource" id="Resource_nyph4"]
+script = ExtResource("1_10gr6")
+Preconditions = Dictionary[String, bool]({
+"key": true
+})
+Tasks = Array[ExtResource("2_bfewt")]([SubResource("Resource_ym35m")])
+
+[sub_resource type="Resource" id="Resource_xpau8"]
+script = ExtResource("1_10gr6")
+
+[sub_resource type="Resource" id="Resource_jrcis"]
+script = ExtResource("1_10gr6")
+
+[resource]
+script = ExtResource("4_qboum")
+Methods = Array[ExtResource("1_10gr6")]([SubResource("Resource_nyph4"), SubResource("Resource_xpau8"), SubResource("Resource_jrcis")])

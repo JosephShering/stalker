@@ -1,12 +1,11 @@
 using Godot;
-using Godot.Collections;
 
 [Tool]
 [GlobalClass]
 public partial class DebugPlanner : Node
 {
     [Export]
-    public CompoundTask RootTask = null!;
+    public Selector Selector = null!;
 
     [Export]
     public HTNBlackboard Blackboard = null!;
@@ -16,10 +15,7 @@ public partial class DebugPlanner : Node
 
     public void Test()
     {
-        var isSuccess = RootTask.Run(Blackboard, out Array<Operator> operators);
-        if (!isSuccess)
-            GD.Print("Could not come up with plan");
-        else
-            GD.Print(operators);
+        var (operators, _blackboard) = Selector.Decompose(Blackboard.Data);
+        GD.Print(operators);
     }
 }

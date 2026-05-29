@@ -1,14 +1,28 @@
 using Godot;
+using Godot.Collections;
+
+public enum OperatorResponse
+{
+    Success,
+    Failure,
+    Waiting
+}
 
 [Tool]
 [GlobalClass]
-public partial class Operator : Resource
+public abstract partial class Operator : Resource
 {
-    [Export]
-    public string Command = "";
+    private Dictionary<StringName, bool> Data = [];
+    private Node Agent = null!;
 
-    public override string ToString()
+    public virtual void Enter() { }
+
+    public virtual OperatorResponse Tick(double delta)
     {
-        return $"Operator: {Command}";
+        return OperatorResponse.Success;
     }
+
+    public virtual void Exit() { }
+
+
 }

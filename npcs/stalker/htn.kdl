@@ -1,0 +1,13 @@
+selector {
+    option is_tired=true near_bed=false {
+        task "GoToBedPosition"
+        task "Sleep"
+    }
+    option is_tired=true found_bed=true {
+        task "GoToBed"
+        task "Sleep"
+    }
+    option is_tired=true {
+        task "Sleep"
+    },
+}

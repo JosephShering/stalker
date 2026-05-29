@@ -8,6 +8,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Chickensoft.LogicBlocks" Version="5.20.0" />
+    <PackageReference Include="GameReadyHtn" Version="4.1.0" />
     <PackageReference Include="ImGui.NET" Version="1.91.6.1" />
+    <PackageReference Include="KdlSharp" Version="1.1.0" />
   </ItemGroup>
 </Project>

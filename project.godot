@@ -23,6 +23,10 @@ settings/addon_root_folder="res://addons/debug_draw_3d"
 
 project/assembly_name="Stalker"
 
+[editor_plugins]
+
+enabled=PackedStringArray()
+
 [input]
 
 move_left={
@@ -58,6 +62,12 @@ jump={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+lights_and_shadows/directional_shadow/size=8192
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=4
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=4
+global_illumination/voxel_gi/quality=1
 anti_aliasing/quality/msaa_3d=2
 anti_aliasing/quality/smaa_edge_detection_threshold=0.08
 scaling_3d/mode=2
+global_illumination/sdfgi/probe_ray_count=2
+lights_and_shadows/positional_shadow/atlas_size=8192

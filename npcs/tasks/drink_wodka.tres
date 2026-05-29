@@ -1,0 +1,15 @@
+[gd_resource type="Task" format=3 uid="uid://cnyle04rq8o4m"]
+
+[sub_resource type="Operator" id="Operator_h7mho"]
+script = ""
+name = "DrinkVodka"
+
+[resource]
+preconditions = Dictionary[StringName, bool]({
+&"has_wodka": true,
+&"is_very_drunk": false
+})
+effects = Dictionary[StringName, bool]({
+&"is_very_drunk": false
+})
+operator = SubResource("Operator_h7mho")

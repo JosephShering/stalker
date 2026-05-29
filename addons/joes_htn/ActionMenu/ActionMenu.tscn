@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cx2jbgpxuvh3d"]
+
+[ext_resource type="Script" uid="uid://cavcet30xonlj" path="res://addons/joes_htn/ActionMenu/ActionMenu.cs" id="1_jc4k5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jc4k5"]
+bg_color = Color(0.09819447, 0.10452949, 0.12674591, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="ActionMenu" type="Control" unique_id=1262347277 node_paths=PackedStringArray("AddCompoundTaskButton", "AddPrimitiveTaskButton")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -902.0
+offset_bottom = -516.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jc4k5")
+AddCompoundTaskButton = NodePath("MarginContainer/VBoxContainer/AddCompoundTask")
+AddPrimitiveTaskButton = NodePath("MarginContainer/VBoxContainer/AddPrimitiveTask")
+metadata/_custom_type_script = "uid://cavcet30xonlj"
+
+[node name="Panel" type="Panel" parent="." unique_id=1756092633]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jc4k5")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2057643930]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=51611689]
+layout_mode = 2
+
+[node name="AddCompoundTask" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1497724551]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Add Compound Task"
+flat = true
+
+[node name="AddPrimitiveTask" type="Button" parent="MarginContainer/VBoxContainer" unique_id=81279019]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Add Primitive Task"
+flat = true

@@ -19,4 +19,6 @@ public partial class BrainAction : Resource
         var modFactor = 1.0 - (1.0 / (double)considerationCount);
         return product + ((1.0 - product) * modFactor * product);
     }
+
+    public override string ToString() => $"Action: {ActionName}";
 }

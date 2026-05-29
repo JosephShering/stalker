@@ -5,5 +5,5 @@ using Godot.Collections;
 public partial class UtilityBlackboard : Resource
 {
     [Export]
-    public Dictionary<string, float> Data = [];
+    public Dictionary<string, double> Data = [];
 }

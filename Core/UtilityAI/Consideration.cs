@@ -14,7 +14,7 @@ public partial class Consideration : Resource
 
     public double GetValue(UtilityBlackboard blackboard)
     {
-        var exists = blackboard.Data.TryGetValue(BlackboardKey, out float value);
+        var exists = blackboard.Data.TryGetValue(BlackboardKey, out double value);
         if (!exists)
         {
             GD.PushWarning($"{BlackboardKey} not in Blackboard...setting it");
@@ -22,8 +22,10 @@ public partial class Consideration : Resource
             return 0.0f;
         }
 
-        var sample = Curve.SampleBaked(value / (float)Highend);
+        var sample = Curve.SampleBaked((float)(value / Highend));
 
         return Mathf.Clamp(sample, 0.0, 1.0);
     }
+
+    public override string ToString() => $"Consideration: {ResourcePath.GetBaseName()}";
 }

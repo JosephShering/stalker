@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 [GlobalClass]
-public partial class Brain : Node
+public partial class Brain : Resource
 {
     [Export]
     public UtilityBlackboard blackboard = null!;
@@ -12,9 +12,9 @@ public partial class Brain : Node
     [Export]
     public Array<BrainAction> Actions = [];
 
-    public List<(BrainAction action, double score)> Window = [];
+    public List<(BrainAction action, double score)> Window { get; internal set; } = [];
 
-    public BrainAction? action;
+    public BrainAction? action { get; internal set; }
 
     public BrainAction Run()
     {
