@@ -1,3 +1,4 @@
+using GameReadyHtn;
 using Godot;
 
 [GlobalClass]
@@ -26,19 +27,71 @@ public partial class NPC : CharacterBody3D
     public int Hunger = 100;
 
     [Export]
-    public int Energy = 100;
+    public int Energy = 19;
 
-    public override void _PhysicsProcess(double delta)
+    [Export]
+    public int ThreatLevel = 49;
+
+    [Export]
+    public Inventory Inventory = null!;
+
+    [ExportGroup("Nodes")]
+    [Export]
+    private NavigationAgent3D Agent;
+
+    public override void _Ready()
     {
-        HTNBlackboard b = new();
+        HtnAgent Agent = new()
+        {
+            States = new()
+            {
+                ["Health"] = Health,
+                ["Hunger"] = Hunger,
+                ["Energy"] = Energy,
+                ["ThreatLevel"] = ThreatLevel
+            },
+            Task = new HtnSelectorTask("Root")
+            {
+                Tasks = [
+                    new HtnSelectorTask("Rest") {
+                        Requirements = [
+                            new HtnCondition() {
+                                State = "Energy",
+                                Comparison = HtnComparison.LessThan,
+                                Value = 20,
+                            },
+                            new HtnCondition() {
+                                State = "ThreatLevel",
+                                Comparison = HtnComparison.LessThan,
+                                Value = 50
+                            }
+                        ],
+                        Tasks = [
+                            new HtnPrimitiveTask("Sleep") {
+                                Effects = [
+                                    new HtnEffect() {
+                                        State = "Energy",
+                                        Value = 10,
+                                        Operation = HtnOperation.IncreaseBy
+                                    }
+                                ]
+                            },
+                        ]
+                    },
+                ]
+            }
+        };
 
-        var data = Blackboard.Data;
-        data["low_health"] = Health < 30;
-        data["is_hungry"] = Hunger < 30;
-        data["is_tired"] = Energy < 30;
-        data["has_heal_item"] = false;
-        data["at_campfire"] = false;
-        data["campfire_position"] = false;
+        var plan = Agent.FindPlan();
+        if (plan == null)
+        {
+            GD.Print("No plan");
+        }
+
+        foreach (var a in plan.Tasks)
+        {
+            GD.Print(a.Name);
+        }
     }
 
     public void Fall()
@@ -49,5 +102,22 @@ public partial class NPC : CharacterBody3D
         velocity.Y -= (2.0f * JumpHeight / (timeTo * timeTo)) * (float)GetPhysicsProcessDeltaTime();
 
         Velocity = velocity;
+    }
+
+    public void SetNavigateTo(Vector3 TargetPosition)
+    {
+        Agent.TargetPosition = TargetPosition;
+    }
+
+    public void Navigate()
+    {
+        //move toward position
+    }
+
+    public void UseItem()
+    {
+        //Play animation
+
+
     }
 }

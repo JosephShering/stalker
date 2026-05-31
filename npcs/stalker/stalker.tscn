@@ -4,6 +4,7 @@
 [ext_resource type="ArrayMesh" uid="uid://cyi0i05jlmbhc" path="res://vendor/PolygonBattleRoyale/Models/Characters/extracted/Character_70sFemale_01.mesh" id="2_wo341"]
 [ext_resource type="Script" uid="uid://cxwl6a0ier4n3" path="res://Core/UtilityAI/UtilityBlackboard.cs" id="2_y25ie"]
 [ext_resource type="Material" uid="uid://cwexdugll1jdc" path="res://vendor/PolygonBattleRoyale/Materials/PolygonBattleRoyale_01_A_mat.tres" id="3_6wxl0"]
+[ext_resource type="Script" uid="uid://b77b473mophpk" path="res://Core/Inventory/Inventory.cs" id="3_xpao0"]
 [ext_resource type="ArrayMesh" uid="uid://djib40evsl5pt" path="res://vendor/PolygonBattleRoyale/Models/Characters/extracted/Character_ToplessMale_01.mesh" id="4_0t21r"]
 [ext_resource type="ArrayMesh" uid="uid://cge1ehnwwivna" path="res://vendor/PolygonBattleRoyale/Models/Characters/extracted/Character_MilitaryFemale_01.mesh" id="5_y25ie"]
 [ext_resource type="ArrayMesh" uid="uid://b4iae5aojoi08" path="res://vendor/PolygonBattleRoyale/Models/Characters/extracted/Character_BusinessMale_01.mesh" id="6_ki4j1"]
@@ -40,6 +41,10 @@ Data = Dictionary[String, float]({
 "threat": 0.0
 })
 metadata/_custom_type_script = "uid://cxwl6a0ier4n3"
+
+[sub_resource type="Resource" id="Resource_w47wc"]
+script = ExtResource("3_xpao0")
+metadata/_custom_type_script = "uid://b77b473mophpk"
 
 [sub_resource type="Skin" id="Skin_cea43"]
 resource_name = "Skin"
@@ -2723,9 +2728,11 @@ height = 0.0729575
 radius = 0.007295756
 height = 0.07295756
 
-[node name="Stalker" type="CharacterBody3D" unique_id=1391485101]
+[node name="Stalker" type="CharacterBody3D" unique_id=1391485101 node_paths=PackedStringArray("Agent")]
 script = ExtResource("1_vyxn7")
 Blackboard = SubResource("Resource_ki4j1")
+Inventory = SubResource("Resource_w47wc")
+Agent = NodePath("NavigationAgent3D")
 metadata/_custom_type_script = "uid://c6i87r1bjw4on"
 
 [node name="Skeleton3D" type="Skeleton3D" parent="." unique_id=286064025]
@@ -3307,10 +3314,10 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_0t21r")
 
 [node name="Physical Bone Spine_03" type="PhysicalBone3D" parent="Skeleton3D/PhysicalBoneSimulator3D" unique_id=1389931266]
-transform = Transform3D(-0.6145383, 0.32013306, -0.72101146, 0.7641183, 0.46877393, -0.44314128, 0.19612718, -0.8232653, -0.5326991, 0.037235796, 1.3621691, 0.026121814)
+transform = Transform3D(-0.6145383, 0.32013306, -0.72101146, 0.7641183, 0.46877396, -0.44314128, 0.19612718, -0.8232653, -0.5326991, 0.037235796, 1.3621691, 0.026121814)
 joint_type = 1
 joint_offset = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.908791e-06, 3.2642856e-06, 0.05163854)
-body_offset = Transform3D(0.7888869, 0.24938041, -0.5616642, 1.1920929e-06, 0.9139606, 0.40580258, 0.6145383, -0.32013306, 0.72101146, 0.028996468, -0.020958036, -0.037235796)
+body_offset = Transform3D(0.7888869, 0.2493804, -0.5616642, 1.1920929e-06, 0.9139606, 0.40580258, 0.6145383, -0.3201331, 0.72101146, 0.028996468, -0.020958036, -0.037235796)
 bone_name = "Spine_03"
 joint_constraints/bias = 0.3
 joint_constraints/damping = 1.0
@@ -3737,10 +3744,10 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_8rvkb")
 
 [node name="Physical Bone Spine_01" type="PhysicalBone3D" parent="Skeleton3D/PhysicalBoneSimulator3D" unique_id=820117062]
-transform = Transform3D(-1, -5.339259e-16, 1.5479047e-15, -1.5725258e-15, 0.049695484, -0.99876446, 4.5634234e-16, -0.9987644, -0.049695488, -6.7106545e-16, 1.0697058, -0.011018753)
+transform = Transform3D(-1, -5.322994e-16, 1.5152154e-15, -1.539796e-15, 0.049695484, -0.99876446, 4.5634234e-16, -0.9987644, -0.049695488, -6.9636887e-16, 1.0697058, -0.011018753)
 joint_type = 1
-joint_offset = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7670783e-16, -1.1186016e-06, 0.09077585)
-body_offset = Transform3D(1.0473505e-15, 0, -1, 3.262808e-17, 1, 1.1175871e-08, 1, -3.2627815e-17, 1.0473499e-15, 0.09077585, 1.1175871e-06, 4.8163373e-16)
+joint_offset = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0497867e-16, -1.1186016e-06, 0.09077585)
+body_offset = Transform3D(1.0800397e-15, 0, -1, 3.4254595e-17, 1, 1.1175871e-08, 1, -3.425433e-17, 1.0800391e-15, 0.09077585, 1.1175871e-06, 5.0693715e-16)
 bone_name = "Spine_01"
 joint_constraints/bias = 0.3
 joint_constraints/damping = 1.0
@@ -3765,10 +3772,10 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_hynb0")
 
 [node name="Physical Bone Ball_L" type="PhysicalBone3D" parent="Skeleton3D/PhysicalBoneSimulator3D" unique_id=274168356]
-transform = Transform3D(1, 7.556155e-09, 2.8312203e-07, 7.556155e-09, -1, -2.9125503e-15, 2.8312203e-07, 5.051864e-15, -1, 0.11444296, -0.0024111483, 0.09599128)
+transform = Transform3D(1, 7.370566e-09, 2.8312203e-07, 7.370566e-09, -1, -2.945206e-15, 2.8312203e-07, 5.031976e-15, -1, 0.11444296, -0.0023833269, 0.09599128)
 joint_type = 1
-joint_offset = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.449167e-10, 0.00056863687, 0.036478758)
-body_offset = Transform3D(0, 5.371019e-16, 0.9999999, 4.338333e-09, 1, -2.9802315e-08, -0.9999999, -1.974049e-08, 2.3469596e-08, -0.036478754, -0.00056863576, 0)
+joint_offset = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.4447815e-10, 0.00059645827, 0.036478758)
+body_offset = Transform3D(0, 5.0444624e-16, 0.9999999, 4.523922e-09, 1, -2.9802315e-08, -0.9999999, -1.95549e-08, 2.3469596e-08, -0.036478754, -0.00059645716, 0)
 bone_name = "Ball_L"
 joint_constraints/bias = 0.3
 joint_constraints/damping = 1.0
@@ -3779,10 +3786,10 @@ transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_x5fhs")
 
 [node name="Physical Bone Ball_R" type="PhysicalBone3D" parent="Skeleton3D/PhysicalBoneSimulator3D" unique_id=1692519289]
-transform = Transform3D(-1, 1.18944845e-08, -2.9802322e-07, 1.1894496e-08, 1, -3.847902e-08, 2.9802322e-07, -3.8479023e-08, -1, -0.11053716, -0.0023654988, 0.09599136)
+transform = Transform3D(-1, 1.18944845e-08, -2.9802322e-07, 1.1894496e-08, 1, -3.890354e-08, 2.9802322e-07, -3.8903543e-08, -1, -0.11053716, -0.0023376774, 0.09599136)
 joint_type = 1
-joint_offset = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0039062505, -0.00061418826, 0.036478788)
-body_offset = Transform3D(0, -8.676693e-09, -1, -8.4703295e-22, 1.0000001, -8.676697e-09, 1, -7.470381e-09, 1.9066053e-07, 0.036478788, 0.0006141886, -0.0039062575)
+joint_offset = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0039062505, -0.0006420096, 0.036478788)
+body_offset = Transform3D(0, -9.101214e-09, -1, -8.4703295e-22, 1.0000001, -9.101218e-09, 1, -7.470381e-09, 1.9066053e-07, 0.036478788, 0.00064201, -0.0039062575)
 bone_name = "Ball_R"
 joint_constraints/bias = 0.3
 joint_constraints/damping = 1.0

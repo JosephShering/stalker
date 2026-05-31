@@ -5,19 +5,19 @@ using Godot;
 public partial class PlayerCharacterBody : CharacterBody3D
 {
     [Export]
-    private double MoveSpeed = 2.0;
+    private double MoveSpeed = 4.0;
 
     [Export]
-    private double Acceleration = 5.0;
+    private double Acceleration = 10.0;
 
     [Export]
-    private double Friction = 15.0;
+    private double Friction = 7.0;
 
     [Export]
     private double AirAcceleration = 1.0;
 
     [Export]
-    private double AirFriction = 0.5;
+    private double AirFriction = 1.0;
 
     [Export]
     private double JumpHeight = 1.1;
@@ -63,19 +63,32 @@ public partial class PlayerCharacterBody : CharacterBody3D
     {
         if (@event is InputEventMouseMotion mouseMotion)
         {
-            MouseMovement = mouseMotion.Relative * new Vector2(0.03f, 0.03f);
+            MouseMovement = mouseMotion.Relative * new Vector2(0.003f, 0.003f);
         }
+    }
+
+    public override void _Process(double delta)
+    {
+        RotateCamera();
     }
 
     public override void _PhysicsProcess(double delta)
     {
         UpdateInputDirection();
         CalculateWishVelocity();
+        HandleJump();
         Fall(delta);
         UpdateVelocity(delta);
-        RotateCamera();
 
         MoveAndSlide();
+    }
+
+    private void HandleJump()
+    {
+        if (Input.IsActionJustPressed("jump") && IsOnFloor())
+        {
+            Jump();
+        }
     }
 
     public void Jump()
@@ -148,7 +161,7 @@ public partial class PlayerCharacterBody : CharacterBody3D
         var isZero = Mathf.IsZeroApprox(horizontalMovement);
 
         if (!isZero)
-            Gimbal.RotateY(-horizontalMovement);
+            RotateY(-horizontalMovement);
 
 
         var verticalMovement = MouseMovement.Y;

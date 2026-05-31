@@ -1,10 +1,11 @@
 using Godot;
+using Godot.Collections;
 
 [Tool]
 [GlobalClass]
 public partial class GoToCampfire : Operator
 {
-    public override OperatorResponse Tick(double delta)
+    public override OperatorResponse Tick(Dictionary<StringName, bool> Data, double delta)
     {
         return OperatorResponse.Success;
     }

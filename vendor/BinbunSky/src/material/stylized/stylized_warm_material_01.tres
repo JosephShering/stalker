@@ -1,8 +1,8 @@
-[gd_resource type="ShaderMaterial" load_steps=8 format=3 uid="uid://cx66rtpl5ncss"]
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cx66rtpl5ncss"]
 
-[ext_resource type="Shader" uid="uid://kgjsu8n7pyom" path="res://assets/BinbunSky/src/shader/main.gdshader" id="1_uitm8"]
-[ext_resource type="Texture2D" uid="uid://y2rosh6pwqt3" path="res://assets/BinbunSky/src/textures/clouds/clouds_03.tres" id="2_uitm8"]
-[ext_resource type="Texture2D" uid="uid://cfp60l0lt2it5" path="res://assets/BinbunSky/src/textures/clouds/clouds_04.tres" id="3_eb7ud"]
+[ext_resource type="Shader" uid="uid://kgjsu8n7pyom" path="res://vendor/BinbunSky/src/shader/main.gdshader" id="1_uitm8"]
+[ext_resource type="Texture2D" uid="uid://y2rosh6pwqt3" path="res://vendor/BinbunSky/src/textures/clouds/clouds_03.tres" id="2_uitm8"]
+[ext_resource type="Texture2D" uid="uid://cfp60l0lt2it5" path="res://vendor/BinbunSky/src/textures/clouds/clouds_04.tres" id="3_eb7ud"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_h2yge"]
 noise_type = 2
@@ -14,19 +14,19 @@ cellular_return_type = 6
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_0xm2m"]
 width = 1024
 height = 1024
-invert = true
-seamless = true
-seamless_blend_skirt = 0.0
 noise = SubResource("FastNoiseLite_h2yge")
+seamless = true
+invert = true
+seamless_blend_skirt = 0.0
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_1bvp3"]
 frequency = 0.001
 fractal_type = 2
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_lquwl"]
+noise = SubResource("FastNoiseLite_1bvp3")
 seamless = true
 seamless_blend_skirt = 0.2
-noise = SubResource("FastNoiseLite_1bvp3")
 
 [resource]
 shader = ExtResource("1_uitm8")

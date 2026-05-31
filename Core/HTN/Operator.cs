@@ -12,17 +12,18 @@ public enum OperatorResponse
 [GlobalClass]
 public abstract partial class Operator : Resource
 {
-    private Dictionary<StringName, bool> Data = [];
-    private Node Agent = null!;
+    protected Dictionary<StringName, bool> Data = [];
+    protected NPC Npc = null!;
 
-    public virtual void Enter() { }
-
-    public virtual OperatorResponse Tick(double delta)
+    public virtual OperatorResponse Enter(Dictionary<StringName, bool> Data)
     {
         return OperatorResponse.Success;
     }
 
-    public virtual void Exit() { }
+    public virtual OperatorResponse Tick(Dictionary<StringName, bool> Data, double delta)
+    {
+        return OperatorResponse.Success;
+    }
 
-
+    public virtual void Exit(Dictionary<StringName, bool> Data) { }
 }

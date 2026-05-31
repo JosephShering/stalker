@@ -1,18 +1,11 @@
 using Godot;
+using Godot.Collections;
 
 [Tool]
 [GlobalClass]
 public partial class GoToLocation : Operator
 {
-    public override void Enter()
-    {
-    }
-
-    public override void Exit()
-    {
-    }
-
-    public override OperatorResponse Tick(double delta)
+    public override OperatorResponse Tick(Dictionary<StringName, bool> Data, double delta)
     {
         return OperatorResponse.Success;
     }

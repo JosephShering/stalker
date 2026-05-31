@@ -15,7 +15,7 @@ public partial class DebugPlanner : Node
 
     public void Test()
     {
-        var (operators, _blackboard) = Selector.Decompose(Blackboard.Data);
-        GD.Print(operators);
+        // var (operators, _blackboard) = Selector.Decompose(Blackboard.Data);
+        // GD.Print(operators);
     }
 }

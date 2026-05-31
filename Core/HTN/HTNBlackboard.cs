@@ -1,11 +1,12 @@
 using Godot;
+using Godot.Collections;
 
 [Tool]
 [GlobalClass]
 public partial class HTNBlackboard : Resource
 {
     [Export]
-    public Godot.Collections.Dictionary<StringName, bool> Data = [];
+    public Dictionary<StringName, Variant> Data = [];
 
     public override string ToString()
     {

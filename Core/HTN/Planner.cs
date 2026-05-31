@@ -68,16 +68,16 @@ public partial class Planner : Node
 
     public override void _PhysicsProcess(double delta)
     {
-        Time += delta;
+        // Time += delta;
 
-        while (Time > Timeout)
-        {
-            Time -= Timeout;
+        // while (Time > Timeout)
+        // {
+        //     Time -= Timeout;
 
-            var (operators, _) = RootTask.Decompose(Blackboard.Data);
-            Plan = operators;
+        //     var (operators, _) = RootTask.Decompose(Blackboard.Data);
+        //     Plan = operators;
 
-            GD.Print(operators);
-        }
+        //     GD.Print(operators);
+        // }
     }
 }
