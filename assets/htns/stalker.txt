@@ -1,0 +1,11 @@
+selector {
+	sequence (energy < 40) {
+		action "target_closest_open_campfire"
+		action "walk_to_target"
+		action "sit"
+	}
+	sequence (health < 40) (has_heal_item == true)  {
+		action "use_heal_item"
+	}
+	action "idle"
+}

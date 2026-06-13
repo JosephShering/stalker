@@ -1,0 +1,14 @@
+[configuration]
+entry_symbol = "gdext_rust_init"
+compatibility_minimum = 4.1
+reloadable = true
+
+[libraries]
+linux.debug.x86_64 =     "res://../pyro/target/debug/libpyro.so"
+linux.release.x86_64 =   "res://../pyro/target/release/libpyro.so"
+windows.debug.x86_64 =   "res://../pyro/target/debug/pyro.dll"
+windows.release.x86_64 = "res://../pyro/target/release/pyro.dll"
+macos.debug =            "res://../pyro/target/debug/libpyro.dylib"
+macos.release =          "res://../pyro/target/release/libpyro.dylib"
+macos.debug.arm64 =      "res://../pyro/target/debug/libpyro.dylib"
+macos.release.arm64 =    "res://../pyro/target/release/libpyro.dylib"
