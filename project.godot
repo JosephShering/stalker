@@ -15,6 +15,10 @@ run/main_scene="uid://bolj888al8e2k"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+CampfireRegistry="*uid://d22ycf4ra55d6"
+
 [debug_draw_3d]
 
 settings/addon_root_folder="res://addons/debug_draw_3d"

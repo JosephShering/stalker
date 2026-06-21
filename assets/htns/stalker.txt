@@ -1,8 +1,8 @@
 selector {
-	sequence (energy < 40) {
+	sequence (energy < 51) {
 		action "target_closest_open_campfire"
 		action "walk_to_target"
-		action "sit"
+		action "sit_at_campfire"
 	}
 	sequence (health < 40) (has_heal_item == true)  {
 		action "use_heal_item"

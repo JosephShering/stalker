@@ -5,16 +5,20 @@
 [ext_resource type="Script" uid="uid://jar555oync3j" path="res://npcs/actions/idle.gd" id="2_gjv5t"]
 [ext_resource type="Script" uid="uid://dvlssd3mdddin" path="res://npcs/actions/walk_to_point.gd" id="3_3ockt"]
 [ext_resource type="Script" uid="uid://bi66vbu1svjc" path="res://npcs/actions/target_closest_open_campfire.gd" id="5_nc13b"]
+[ext_resource type="Script" uid="uid://c0ceaq0lkq26o" path="res://npcs/actions/sit_at_campfire.gd" id="6_lnlgx"]
+[ext_resource type="Script" uid="uid://6bawdii5g1yu" path="res://npcs/actions/use_heal_item.gd" id="7_xg8me"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_r7m7x"]
 radius = 0.20117188
 height = 1.7541504
 
-[sub_resource type="HTN" id="HTN_gjv5t"]
+[sub_resource type="HTN" id="HTN_lnlgx"]
 file = "res://assets/htns/stalker.txt"
 
 [node name="Stalker" type="NPC" unique_id=627340902]
 script = ExtResource("1_3ockt")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1836938728]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=222103022]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8758545, 0)
@@ -153,10 +157,16 @@ bones/245/rotation = Quaternion(-0.53571725, -0.4548755, 0.5393457, -0.4638983)
 bones/246/rotation = Quaternion(-0.53574234, -0.45489696, 0.5393208, -0.46387708)
 bones/250/rotation = Quaternion(-0.7026233, 0.027026528, 0.7108037, -0.018660566)
 
-[node name="Actor" type="Actor" parent="." unique_id=2026141986 node_paths=PackedStringArray("action_library")]
+[node name="Actor" type="Actor" parent="." unique_id=106001102 node_paths=PackedStringArray("action_library", "agent")]
 action_library = NodePath("../ActionLibrary")
-htn = SubResource("HTN_gjv5t")
+htn = SubResource("HTN_lnlgx")
+agent = NodePath("..")
 thoughts_per_second = 1.0
+
+[node name="Sensors" type="Sensor" parent="." unique_id=78835346 node_paths=PackedStringArray("actor", "target")]
+actor = NodePath("../Actor")
+target = NodePath("..")
+keys = Array[StringName]([&"energy", &"health", &"has_heal_item"])
 
 [node name="ActionLibrary" type="ActionLibrary" parent="." unique_id=1388316193]
 
@@ -165,26 +175,27 @@ key = "idle"
 script = ExtResource("2_gjv5t")
 metadata/_custom_type_script = "uid://jar555oync3j"
 
-[node name="WalkToPoint" type="HTNAction" parent="ActionLibrary" unique_id=1099057451]
-key = "walk_to_point"
+[node name="WalkToTarget" type="HTNAction" parent="ActionLibrary" unique_id=1099057451 node_paths=PackedStringArray("agent", "nav")]
+key = "walk_to_target"
 script = ExtResource("3_3ockt")
+agent = NodePath("../..")
+nav = NodePath("../../NavigationAgent3D")
 metadata/_custom_type_script = "uid://dvlssd3mdddin"
 
-[node name="TargetClosestOpenCampfire" type="HTNAction" parent="ActionLibrary" unique_id=135078564]
+[node name="TargetClosestOpenCampfire" type="HTNAction" parent="ActionLibrary" unique_id=135078564 node_paths=PackedStringArray("agent")]
 key = "target_closest_open_campfire"
 script = ExtResource("5_nc13b")
+agent = NodePath("../..")
 metadata/_custom_type_script = "uid://bi66vbu1svjc"
 
-[node name="Sensors" type="Node" parent="." unique_id=721666311]
+[node name="SitAtCampfire" type="HTNAction" parent="ActionLibrary" unique_id=167998047]
+key = "sit_at_campfire"
+script = ExtResource("6_lnlgx")
+metadata/_custom_type_script = "uid://c0ceaq0lkq26o"
 
-[node name="EnergySensor" type="Sensor" parent="Sensors" unique_id=78835346 node_paths=PackedStringArray("actor", "target")]
-actor = NodePath("../../Actor")
-target = NodePath("../..")
-key = &"energy"
-
-[node name="HasHealItemSensor" type="Sensor" parent="Sensors" unique_id=1838410482 node_paths=PackedStringArray("actor", "target")]
-actor = NodePath("../../Actor")
-target = NodePath("../..")
-key = &"has_heal_item"
+[node name="UseHealItem" type="HTNAction" parent="ActionLibrary" unique_id=957679436]
+key = "use_heal_item"
+script = ExtResource("7_xg8me")
+metadata/_custom_type_script = "uid://6bawdii5g1yu"
 
 [editable path="character"]
